@@ -368,8 +368,12 @@
       <h2>Request a wholesale quote</h2>
       <p class="section-lead">We respond to verified B2B inquiries. Recreational-use requests will be declined.</p>
       <div class="two-col">
-        <form class="inquiry" action="mailto:creamtank@mail.grokbot.com" method="post" enctype="text/plain">
-          <input type="hidden" name="subject" value="CreamTank wholesale inquiry" />
+        <form class="inquiry" action="https://formsubmit.co/creamtank@mail.grokbot.com" method="POST">
+          <input type="hidden" name="_subject" value="CreamTank wholesale inquiry" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="https://creamtank.com/?sent=1#inquiry" />
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
           <label>Company legal name
             <input name="company" placeholder="Company Ltd" />
           </label>
@@ -416,7 +420,7 @@
             <textarea name="message" placeholder="Destination warehouse, timing, document needs…"></textarea>
           </label>
           <button class="btn btn-primary" type="submit">Send inquiry</button>
-          <p class="micro">Submit opens your email client to <strong>creamtank@mail.grokbot.com</strong>. Or message us on WhatsApp.</p>
+          <p class="micro">Submit sends your inquiry to <strong>creamtank@mail.grokbot.com</strong>. Or message us on WhatsApp.</p>
         </form>
 
         <aside class="contact-box">
@@ -447,5 +451,21 @@
       <p class="fine">© CreamTank. All rights reserved.</p>
     </footer>
   </div>
+
+  <script>
+    (function () {
+      try {
+        if (new URLSearchParams(location.search).get('sent') === '1') {
+          var f = document.querySelector('form.inquiry');
+          if (!f) return;
+          var n = document.createElement('p');
+          n.className = 'micro';
+          n.style.color = 'var(--accent2)';
+          n.textContent = 'Thanks — your inquiry was submitted. We will reply by email.';
+          f.prepend(n);
+        }
+      } catch (e) {}
+    })();
+  </script>
 </body>
 </html>
