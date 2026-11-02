@@ -4,16 +4,16 @@
 
 ## Products
 
-- [Product range overview](https://creamtank.com/#products): Large-format cream chargers for B2B channels, not the small consumer cartridge retail path. EU SKUs centre on 666g lines; UK option includes FastGas ~670g. Public pages do not list prices; quotes include product plus dangerous-goods freight by destination. Shipping tiers on inquiry include pallet freight, full truck (24 pallets) or full container (26 pallets) delivered pricing concepts.
-- [CDL Sixth Wave Edition 666](https://creamtank.com/#product-sixth-wave): Food-grade N₂O cream charger approximately 666g. Pack reference notes about 320 mm H × Ø70 mm × 2.5 mm wall. Sold 6 per carton for pallet wholesale via EU warehouse network (FR / DE / ES).
-- [Cream Deluxe 666g](https://creamtank.com/#product-cream-deluxe): E942 food-grade large-format cylinder. Pack art shows UN1070 / Class 2.2 & 5.1. B2B wholesale only; inquire for stock and documents.
-- [CDL Black Cobra 666g](https://creamtank.com/#product-black-cobra): Food-grade cream charger line for professional buyers. 6 per carton. Pallet MOQ. EU fulfilment routing confirmed on inquiry.
-- [FastGas ~670g](https://creamtank.com/#product-fastgas): Large-format cream charger with UK warehouse fulfilment positioning. About 6 per carton and about 504 pcs per pallet on published materials. Quote includes separate DG freight by destination.
+- [Product range overview](https://creamtank.com/products.html): Large-format cream chargers for B2B channels, not the small consumer cartridge retail path. EU SKUs centre on 666g lines; UK option includes FastGas ~670g. Public pages do not list prices; quotes include product plus dangerous-goods freight by destination. Shipping tiers on inquiry include pallet freight, full truck (24 pallets) or full container (26 pallets) delivered pricing concepts.
+- [CDL Sixth Wave Edition 666](https://creamtank.com/products.html#product-sixth-wave): Food-grade N₂O cream charger approximately 666g. Pack reference notes about 320 mm H × Ø70 mm × 2.5 mm wall. Sold 6 per carton for pallet wholesale via EU warehouse network (FR / DE / ES).
+- [Cream Deluxe 666g](https://creamtank.com/products.html#product-cream-deluxe): E942 food-grade large-format cylinder. Pack art shows UN1070 / Class 2.2 & 5.1. B2B wholesale only; inquire for stock and documents.
+- [CDL Black Cobra 666g](https://creamtank.com/products.html#product-black-cobra): Food-grade cream charger line for professional buyers. 6 per carton. Pallet MOQ. EU fulfilment routing confirmed on inquiry.
+- [FastGas ~670g](https://creamtank.com/products.html#product-fastgas): Large-format cream charger with UK warehouse fulfilment positioning. About 6 per carton and about 504 pcs per pallet on published materials. Quote includes separate DG freight by destination.
 - Additional large-format sizes (for example 2000g lines) may be available in supplier materials; confirm current SKU list and warehouse stock when you inquire — do not assume public availability without a quote.
 
 ## Fulfillment
 
-- [EU & UK warehouse fulfilment](https://creamtank.com/#fulfilment): CreamTank fulfils professional B2B pallet orders from an EU warehouse network in France, Germany and Spain. EU warehouse stock is described as ready for eligible professional orders. After payment, truck booking typically takes 1–3 days; transit is typically 4–48 hours depending on distance and DG carrier scheduling. UK warehouse fulfilment covers selected SKUs such as FastGas ~670g. Exact routing and availability are confirmed per inquiry.
+- [EU & UK warehouse fulfilment](https://creamtank.com/fulfilment.html): CreamTank fulfils professional B2B pallet orders from an EU warehouse network in France, Germany and Spain. EU warehouse stock is described as ready for eligible professional orders. After payment, truck booking typically takes 1–3 days; transit is typically 4–48 hours depending on distance and DG carrier scheduling. UK warehouse fulfilment covers selected SKUs such as FastGas ~670g. Exact routing and availability are confirmed per inquiry.
 - [How buying works](https://creamtank.com/#buying): (1) MOQ = 1 pallet — CreamTank does not fulfil loose retail or small-parcel orders. (2) Share company details and lawful food or industrial end use (company name optional, country, VAT/registration optional, SKU preference, destination; phone required). (3) Availability and wholesale quote covering EU multi-warehouse and/or UK options. (4) Dangerous goods freight as UN1070 · Class 2.2 with 5.1 via approved DG-capable carriers.
 
 ## Quality, documents & certificates
@@ -47,5 +47,5 @@
 - Certificates: TPED cylinder conformity (notified body 0036 / EN ISO 11118) on request for qualified B2B buyers; E942 COA not claimed as standard public pack
 - Pricing: no public list prices; quote on inquiry
 - Primary language of site: English
-- Canonical site map entry: https://creamtank.com/
+- Canonical site map entries: https://creamtank.com/ · https://creamtank.com/products.html · https://creamtank.com/fulfilment.html
 - Companion short file: https://creamtank.com/llms.txt

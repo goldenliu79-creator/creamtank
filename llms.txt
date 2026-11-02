@@ -4,15 +4,17 @@
 
 ## Products
 
-- [Product range](https://creamtank.com/#products): Large-format food-grade cream chargers for B2B wholesale — CDL Sixth Wave 666g, Cream Deluxe 666g, CDL Black Cobra 666g (EU), FastGas ~670g (UK).
-- [CDL Sixth Wave Edition 666](https://creamtank.com/#product-sixth-wave): Food-grade N₂O cream charger, 666g, EU warehouse network, pallet MOQ, 6 per carton.
-- [Cream Deluxe 666g](https://creamtank.com/#product-cream-deluxe): E942 large-format cream charger for professional buyers; UN1070 Class 2.2 / 5.1 labelling on pack art.
-- [CDL Black Cobra 666g](https://creamtank.com/#product-black-cobra): Food-grade cream charger line for B2B channels; 6 per carton; pallet wholesale.
-- [FastGas ~670g](https://creamtank.com/#product-fastgas): Large-format cream charger with UK warehouse fulfilment; about 504 pcs per pallet; quote includes DG freight.
+- [Product range](https://creamtank.com/products.html): Large-format food-grade cream chargers for B2B wholesale — CDL Sixth Wave 666g, Cream Deluxe 666g, CDL Black Cobra 666g (EU), FastGas ~670g (UK). Specs without public list prices.
+- [CDL Sixth Wave Edition 666](https://creamtank.com/products.html#product-sixth-wave): Food-grade N₂O cream charger, 666g, EU warehouse network, pallet MOQ, 6 per carton; default ~504 pcs/pallet.
+- [Cream Deluxe 666g](https://creamtank.com/products.html#product-cream-deluxe): E942 large-format cream charger for professional buyers; UN1070 Class 2.2 / 5.1 labelling on pack art.
+- [CDL Black Cobra 666g](https://creamtank.com/products.html#product-black-cobra): Food-grade cream charger line for B2B channels; 6 per carton; pallet wholesale.
+- [FastGas ~670g](https://creamtank.com/products.html#product-fastgas): Large-format cream charger with UK warehouse fulfilment; about 504 pcs per pallet; UK full-container reference ~12096 pcs; quote includes DG freight.
+- [Homepage product overview](https://creamtank.com/#products): Short cards linking to the products page and inquiry form.
 
 ## Fulfillment
 
-- [EU & UK warehouse fulfilment](https://creamtank.com/#fulfilment): EU network in France, Germany and Spain with stock ready; after payment, truck booking 1–3 days and transit typically 4–48h by distance; UK warehouse for selected SKUs such as FastGas.
+- [EU & UK warehouse fulfilment](https://creamtank.com/fulfilment.html): Nearest-warehouse policy for France, Germany and Spain; UK warehouse for selected SKUs; after payment truck booking 1–3 days and transit typically 4–48h by distance; German addresses may ship from other EU warehouses; pallet MOQ; no samples.
+- [Homepage fulfilment summary](https://creamtank.com/#fulfilment): Short summary with link to the fulfilment page.
 - [How buying works](https://creamtank.com/#buying): MOQ is 1 pallet only — no small retail parcels; company details and lawful food/industrial end use required; DG freight UN1070.
 
 ## FAQ
@@ -24,6 +26,8 @@
 ## Contact
 
 - Website: https://creamtank.com/
+- Products: https://creamtank.com/products.html
+- Fulfilment: https://creamtank.com/fulfilment.html
 - Inquiry form: https://creamtank.com/#inquiry
 - Email: creamtank@mail.grokbot.com
 - WhatsApp (Jay): +852 57143665
@@ -33,10 +37,11 @@
 
 - Brand: CreamTank
 - Industry: B2B food-grade N₂O (E942) cream charger wholesale
-- MOQ: 1 pallet only (no loose retail / small-parcel fulfilment)
-- EU warehouses: France, Germany, Spain — ship from the nearest warehouse to the delivery address; EU stock ready; after payment, truck booking 1–3 days; transit typically 4–48h by distance
+- MOQ: 1 pallet only (no loose retail / small-parcel fulfilment); no samples
+- EU warehouses: France, Germany, Spain — ship from the nearest warehouse to the delivery address; German buyers may be served from other EU warehouses; EU stock ready; after payment, truck booking 1–3 days; transit typically 4–48h by distance
 - UK warehouse: available for selected SKUs (e.g. FastGas ~670g)
 - Hazard class: UN1070 · Class 2.2 with 5.1
 - Audience: verified foodservice, bakery, food-processing and industrial buyers
 - Certificates: TPED cylinder conformity (notified body 0036 / EN ISO 11118) available on request for qualified B2B buyers; E942 COA not claimed as standard public pack — ask for current document list
 - No public list prices on the website
+- Extended facts: https://creamtank.com/llms-full.txt
