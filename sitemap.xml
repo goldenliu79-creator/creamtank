@@ -19,15 +19,21 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://creamtank.com/llms.txt</loc>
+    <loc>https://creamtank.com/products/sixth-wave-666.html</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://creamtank.com/llms-full.txt</loc>
+    <loc>https://creamtank.com/products/cream-deluxe-666.html</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.4</priority>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://creamtank.com/products/black-cobra-666.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
