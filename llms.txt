@@ -12,7 +12,7 @@
 
 ## Fulfillment
 
-- [EU & UK warehouse fulfilment](https://creamtank.com/#fulfilment): EU network in France, Germany and Spain with stock ready and typical delivery within 7 days; UK warehouse for selected SKUs such as FastGas.
+- [EU & UK warehouse fulfilment](https://creamtank.com/#fulfilment): EU network in France, Germany and Spain with stock ready; after payment, truck booking 1–3 days and transit typically 4–48h by distance; UK warehouse for selected SKUs such as FastGas.
 - [How buying works](https://creamtank.com/#buying): MOQ is 1 pallet only — no small retail parcels; company details and lawful food/industrial end use required; DG freight UN1070.
 
 ## FAQ
@@ -34,7 +34,7 @@
 - Brand: CreamTank
 - Industry: B2B food-grade N₂O (E942) cream charger wholesale
 - MOQ: 1 pallet only (no loose retail / small-parcel fulfilment)
-- EU warehouses: France, Germany, Spain — ship from the nearest warehouse to the delivery address; EU stock ready, typical delivery within 7 days
+- EU warehouses: France, Germany, Spain — ship from the nearest warehouse to the delivery address; EU stock ready; after payment, truck booking 1–3 days; transit typically 4–48h by distance
 - UK warehouse: available for selected SKUs (e.g. FastGas ~670g)
 - Hazard class: UN1070 · Class 2.2 with 5.1
 - Audience: verified foodservice, bakery, food-processing and industrial buyers
