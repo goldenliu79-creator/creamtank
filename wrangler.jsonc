@@ -1,0 +1,8 @@
+{
+  "name": "creamtank",
+  "compatibility_date": "2026-11-02",
+  "assets": {
+    "directory": ".",
+    "not_found_handling": "404-page"
+  }
+}

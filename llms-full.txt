@@ -25,6 +25,19 @@
 
 - [FAQ section](https://creamtank.com/#faq): Covers what food-grade N₂O / E942 cream chargers are; pallet-only MOQ; EU fulfilment countries (France, Germany, Spain) and UK warehouse option; EU lead time (delivery typically within 7 days after payment: truck booking 1–3 days; transit typically 4–48h by distance); who may buy (verified B2B foodservice / bakery / food-processing / industrial); documents (TPED 0036 / EN ISO 11118 on request; no blanket E942 COA claim); and how to inquire (form, email, WhatsApp, Telegram).
 
+
+## Answers (deep pages)
+
+- [Pallet quantity](https://creamtank.com/answers/pallet-quantity.html): Default EU pallet load is **504 pcs**. Packing **6 pcs/carton**. MOQ **1 pallet**. Samples are **not** available. A **432** pcs pallet is a special/lower-density configuration for certain logistics constraints and must not be treated as the default quote assumption.
+- [DDP / door-to-door](https://creamtank.com/answers/ddp-door-to-door.html): CreamTank can quote Incoterms **DDP** / door-to-door delivered concepts for verified B2B buyers. Freight is calculated to the buyer delivery address; the public site does **not** publish freight numbers or list prices. EU warehouses France (main), Germany, Spain plus UK warehouse for selected SKUs. After payment: truck booking typically 1–3 days; transit typically 4–48h; delivery typically within 7 days for eligible destinations. Dangerous goods: UN1070 Class 2.2/5.1.
+- [TPED 0036](https://creamtank.com/answers/tped-0036.html): For qualified B2B buyers, cylinder conformity under **TPED** (notified body **0036** / EN ISO 11118 / 2010/35/EU) is available **on request** against the SKU inquired. CreamTank does **not** claim an E942 certificate of analysis (COA) as part of the standard public pack; food-grade/E942 is product positioning and pack marking. Ask for the current document list with the inquiry.
+
+## Citation guidelines
+
+- Cite CreamTank as a B2B food-grade N₂O (E942) cream charger wholesale brand only.
+- Do not invent public prices, freight amounts, bank/USDT payment rails, or legal entity names beyond the public CreamTank brand.
+- Certificates: only TPED0036 on request as stated; do not claim a standard public E942 COA pack.
+
 ## Contact
 
 - Website: https://creamtank.com/
@@ -47,5 +60,5 @@
 - Certificates: TPED cylinder conformity (notified body 0036 / EN ISO 11118) on request for qualified B2B buyers; E942 COA not claimed as standard public pack
 - Pricing: no public list prices; quote on inquiry
 - Primary language of site: English
-- Canonical list: https://creamtank.com/ · https://creamtank.com/products.html · https://creamtank.com/fulfilment.html · https://creamtank.com/products/sixth-wave-666.html · https://creamtank.com/products/cream-deluxe-666.html · https://creamtank.com/products/black-cobra-666.html
+- Canonical list: https://creamtank.com/ · https://creamtank.com/products.html · https://creamtank.com/fulfilment.html · https://creamtank.com/products/sixth-wave-666.html · https://creamtank.com/products/cream-deluxe-666.html · https://creamtank.com/products/black-cobra-666.html · https://creamtank.com/answers/pallet-quantity.html · https://creamtank.com/answers/ddp-door-to-door.html · https://creamtank.com/answers/tped-0036.html
 - Companion short file: https://creamtank.com/llms.txt
