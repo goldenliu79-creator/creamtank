@@ -18,7 +18,7 @@
 ## FAQ
 
 - [FAQ — food-grade N₂O cream chargers](https://creamtank.com/#faq): Buyer questions on E942 use, pallet MOQ, EU/UK fulfilment countries, lead times, who can buy, certificates status, and how to inquire.
-- [Quality & documents](https://creamtank.com/#docs): Food-grade E942 positioning; SKU-matched SDS and certificate pack lists shared on inquiry; some cert packages pending or limited — disclosed per SKU.
+- [Quality & documents](https://creamtank.com/#docs): Food-grade wholesale positioning; cylinder conformity under TPED (notified body 0036 / EN ISO 11118) on request for qualified B2B buyers; no blanket E942 COA claim — ask for current document list.
 - [Compliance posture](https://creamtank.com/#compliance): Verified B2B foodservice, bakery, food-processing or industrial buyers only; recreational use declined.
 
 ## Contact
@@ -38,5 +38,5 @@
 - UK warehouse: available for selected SKUs (e.g. FastGas ~670g)
 - Hazard class: UN1070 · Class 2.2 with 5.1
 - Audience: verified foodservice, bakery, food-processing and industrial buyers
-- Certificates: design-code / SDS / packing files shared against SKU; full cert package may be pending or limited — ask for current pack list
+- Certificates: TPED cylinder conformity (notified body 0036 / EN ISO 11118) available on request for qualified B2B buyers; E942 COA not claimed as standard public pack — ask for current document list
 - No public list prices on the website

@@ -18,12 +18,12 @@
 
 ## Quality, documents & certificates
 
-- [Quality & documents](https://creamtank.com/#docs): Products are offered as food-grade nitrous oxide (E942) cream chargers for whipped-cream / food-propellant use in professional channels. Design-code certificates, SDS, packing papers and related files are shared against the SKU inquired. Ask for the current pack list. Some certificate packages may be pending, limited, or SKU-specific — CreamTank discloses status on inquiry rather than claiming a blanket public cert set.
+- [Quality & documents](https://creamtank.com/#docs): Products are offered as food-grade nitrous oxide (E942) cream chargers for whipped-cream / food-propellant use in professional channels. For qualified B2B buyers, cylinder conformity documents under TPED (notified body 0036 / EN ISO 11118) are available on request against the SKU inquired. CreamTank does not claim an E942 certificate of analysis (COA) as part of the standard public pack — ask for the current document list.
 - [Compliance posture](https://creamtank.com/#compliance): Sales are limited to business customers for lawful food and industrial uses. The brand does not promote inhalation or recreational use and does not sell accessories such as balloons or crackers. Buyer due diligence is part of every wholesale conversation. Website copy is commercial information, not legal advice.
 
 ## FAQ (summary)
 
-- [FAQ section](https://creamtank.com/#faq): Covers what food-grade N₂O / E942 cream chargers are; pallet-only MOQ; EU fulfilment countries (France, Germany, Spain) and UK warehouse option; typical EU lead time (~7 days when stock-ready); who may buy (verified B2B foodservice / bakery / food-processing / industrial); certificate pack status (shared per SKU; may be pending or limited); and how to inquire (form, email, WhatsApp, Telegram).
+- [FAQ section](https://creamtank.com/#faq): Covers what food-grade N₂O / E942 cream chargers are; pallet-only MOQ; EU fulfilment countries (France, Germany, Spain) and UK warehouse option; typical EU lead time (~7 days when stock-ready); who may buy (verified B2B foodservice / bakery / food-processing / industrial); documents (TPED 0036 / EN ISO 11118 on request; no blanket E942 COA claim); and how to inquire (form, email, WhatsApp, Telegram).
 
 ## Contact
 
@@ -44,7 +44,7 @@
 - UK warehouse: selected SKUs (FastGas ~670g highlighted)
 - Lead time (EU stock-ready cases): typically within 7 days subject to DG carrier scheduling
 - Hazard: UN1070 · Class 2.2 with 5.1
-- Certificates: provided per SKU on inquiry; pending/limited packages disclosed honestly
+- Certificates: TPED cylinder conformity (notified body 0036 / EN ISO 11118) on request for qualified B2B buyers; E942 COA not claimed as standard public pack
 - Pricing: no public list prices; quote on inquiry
 - Primary language of site: English
 - Canonical site map entry: https://creamtank.com/
