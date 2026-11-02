@@ -1,6 +1,6 @@
 # CreamTank — full site facts for AI systems
 
-> CreamTank is a B2B wholesale brand for food-grade nitrous oxide (N₂O, food additive E942, UN1070) cream chargers sold to verified professional buyers. Fulfilment uses an EU warehouse network in France, Germany and Spain, plus UK warehouse options. Minimum order is one pallet. This file expands on https://creamtank.com/llms.txt with factual detail only — no invented certificates, prices, or legal entity names beyond the public CreamTank brand.
+> CreamTank is a B2B wholesale brand for food-grade nitrous oxide (N₂O, food additive E942, UN1070) cream chargers sold to verified professional buyers. Fulfilment uses an EU warehouse network in France, Germany and Spain (nearest warehouse to the buyer address preferred), plus UK warehouse options. Minimum order is one pallet. This file expands on https://creamtank.com/llms.txt with factual detail only — no invented certificates, prices, or legal entity names beyond the public CreamTank brand.
 
 ## Products
 

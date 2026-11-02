@@ -34,7 +34,7 @@
 - Brand: CreamTank
 - Industry: B2B food-grade N₂O (E942) cream charger wholesale
 - MOQ: 1 pallet only (no loose retail / small-parcel fulfilment)
-- EU warehouses: France, Germany, Spain — EU stock ready, typical delivery within 7 days
+- EU warehouses: France, Germany, Spain — ship from the nearest warehouse to the delivery address; EU stock ready, typical delivery within 7 days
 - UK warehouse: available for selected SKUs (e.g. FastGas ~670g)
 - Hazard class: UN1070 · Class 2.2 with 5.1
 - Audience: verified foodservice, bakery, food-processing and industrial buyers
