@@ -1,4 +1,40 @@
+# CreamTank — https://creamtank.com/
+# AI / LLM discoverability: https://creamtank.com/llms.txt
+# Extended facts: https://creamtank.com/llms-full.txt
+
 User-agent: *
 Allow: /
 
+# Common AI crawlers (explicit allow; site is public B2B marketing)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
 Sitemap: https://creamtank.com/sitemap.xml
+# LLM: https://creamtank.com/llms.txt

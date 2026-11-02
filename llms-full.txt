@@ -1,0 +1,51 @@
+# CreamTank — full site facts for AI systems
+
+> CreamTank is a B2B wholesale brand for food-grade nitrous oxide (N₂O, food additive E942, UN1070) cream chargers sold to verified professional buyers. Fulfilment uses an EU warehouse network in France, Germany and Spain, plus UK warehouse options. Minimum order is one pallet. This file expands on https://creamtank.com/llms.txt with factual detail only — no invented certificates, prices, or legal entity names beyond the public CreamTank brand.
+
+## Products
+
+- [Product range overview](https://creamtank.com/#products): Large-format cream chargers for B2B channels, not the small consumer cartridge retail path. EU SKUs centre on 666g lines; UK option includes FastGas ~670g. Public pages do not list prices; quotes include product plus dangerous-goods freight by destination. Shipping tiers on inquiry include pallet freight, full truck (24 pallets) or full container (26 pallets) delivered pricing concepts.
+- [CDL Sixth Wave Edition 666](https://creamtank.com/#product-sixth-wave): Food-grade N₂O cream charger approximately 666g. Pack reference notes about 320 mm H × Ø70 mm × 2.5 mm wall. Sold 6 per carton for pallet wholesale via EU warehouse network (FR / DE / ES).
+- [Cream Deluxe 666g](https://creamtank.com/#product-cream-deluxe): E942 food-grade large-format cylinder. Pack art shows UN1070 / Class 2.2 & 5.1. B2B wholesale only; inquire for stock and documents.
+- [CDL Black Cobra 666g](https://creamtank.com/#product-black-cobra): Food-grade cream charger line for professional buyers. 6 per carton. Pallet MOQ. EU fulfilment routing confirmed on inquiry.
+- [FastGas ~670g](https://creamtank.com/#product-fastgas): Large-format cream charger with UK warehouse fulfilment positioning. About 6 per carton and about 504 pcs per pallet on published materials. Quote includes separate DG freight by destination.
+- Additional large-format sizes (for example 2000g lines) may be available in supplier materials; confirm current SKU list and warehouse stock when you inquire — do not assume public availability without a quote.
+
+## Fulfillment
+
+- [EU & UK warehouse fulfilment](https://creamtank.com/#fulfilment): CreamTank fulfils professional B2B pallet orders from an EU warehouse network in France, Germany and Spain. EU warehouse stock is described as ready for eligible professional orders, with typical delivery within 7 days depending on destination and DG carrier scheduling. UK warehouse fulfilment covers selected SKUs such as FastGas ~670g. Exact routing and availability are confirmed per inquiry.
+- [How buying works](https://creamtank.com/#buying): (1) MOQ = 1 pallet — CreamTank does not fulfil loose retail or small-parcel orders. (2) Share company details and lawful food or industrial end use (company name optional, country, VAT/registration optional, SKU preference, destination; phone required). (3) Availability and wholesale quote covering EU multi-warehouse and/or UK options. (4) Dangerous goods freight as UN1070 · Class 2.2 with 5.1 via approved DG-capable carriers.
+
+## Quality, documents & certificates
+
+- [Quality & documents](https://creamtank.com/#docs): Products are offered as food-grade nitrous oxide (E942) cream chargers for whipped-cream / food-propellant use in professional channels. Design-code certificates, SDS, packing papers and related files are shared against the SKU inquired. Ask for the current pack list. Some certificate packages may be pending, limited, or SKU-specific — CreamTank discloses status on inquiry rather than claiming a blanket public cert set.
+- [Compliance posture](https://creamtank.com/#compliance): Sales are limited to business customers for lawful food and industrial uses. The brand does not promote inhalation or recreational use and does not sell accessories such as balloons or crackers. Buyer due diligence is part of every wholesale conversation. Website copy is commercial information, not legal advice.
+
+## FAQ (summary)
+
+- [FAQ section](https://creamtank.com/#faq): Covers what food-grade N₂O / E942 cream chargers are; pallet-only MOQ; EU fulfilment countries (France, Germany, Spain) and UK warehouse option; typical EU lead time (~7 days when stock-ready); who may buy (verified B2B foodservice / bakery / food-processing / industrial); certificate pack status (shared per SKU; may be pending or limited); and how to inquire (form, email, WhatsApp, Telegram).
+
+## Contact
+
+- Website: https://creamtank.com/
+- Wholesale inquiry form: https://creamtank.com/#inquiry
+- Email: creamtank@mail.grokbot.com
+- WhatsApp sales (Jay): +852 57143665
+- Telegram sales (Jay): https://t.me/Jay_z189
+- Public brand name: CreamTank (do not invent alternate legal names from this file)
+
+## Key Facts
+
+- Public brand: CreamTank
+- Offering: food-grade N₂O cream chargers (E942), UN1070
+- Channel: B2B wholesale only
+- MOQ: 1 pallet; no small retail parcels
+- EU warehouses: France, Germany, Spain
+- UK warehouse: selected SKUs (FastGas ~670g highlighted)
+- Lead time (EU stock-ready cases): typically within 7 days subject to DG carrier scheduling
+- Hazard: UN1070 · Class 2.2 with 5.1
+- Certificates: provided per SKU on inquiry; pending/limited packages disclosed honestly
+- Pricing: no public list prices; quote on inquiry
+- Primary language of site: English
+- Canonical site map entry: https://creamtank.com/
+- Companion short file: https://creamtank.com/llms.txt
