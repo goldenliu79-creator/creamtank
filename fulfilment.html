@@ -187,8 +187,7 @@
     footer .fine { margin-top: 1.25rem; font-size: 0.8rem; opacity: 0.85; }
     .crumbs { color: var(--muted); font-size: 0.85rem; margin: 0.5rem 0 0; }
     .crumbs a { color: var(--muted); }
-    .related { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
-    @media (max-width: 860px) { .related { grid-template-columns: 1fr; } }
+    .related { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
 
     .hero-simple { padding: 2rem 0 1rem; }
   </style>
@@ -273,8 +272,9 @@
     <header class="site">
       <a class="logo" href="/">Cream<span>Tank</span></a>
       <nav aria-label="Primary">
-        <a href="/#products">Products</a>
+        <a href="/products.html">Products</a>
         <a href="/fulfilment.html">Fulfilment</a>
+        <a href="/documents.html">Documents</a>
         <a href="/#buying">How to order</a>
         <a href="/#faq">FAQ</a>
         <a href="/#inquiry">Request a quote</a>
@@ -323,7 +323,7 @@
     <section id="how">
       <h2>How to order (pallet MOQ)</h2>
       <div class="steps">
-        <div class="step"><div class="num">1</div><div><strong>MOQ = 1 pallet</strong><br /><span style="color:var(--muted)">Default EU pallet load <strong>504 pcs</strong>. No loose retail parcels. No samples (product weight).</span></div></div>
+        <div class="step"><div class="num">1</div><div><strong>MOQ = 1 pallet</strong><br /><span style="color:var(--muted)">Default EU pallet load <strong>504 pcs</strong>. No loose retail parcels. <a href="/answers/no-samples.html">No samples</a> (product weight · UN1070).</span></div></div>
         <div class="step"><div class="num">2</div><div><strong>Share destination &amp; end use</strong><br /><span style="color:var(--muted)">Delivery country/city, SKU preference, pallet quantity, lawful foodservice / bakery / food-processing / industrial use, and phone contact.</span></div></div>
         <div class="step"><div class="num">3</div><div><strong>Warehouse routing + quote</strong><br /><span style="color:var(--muted)">We select the nearest stocked warehouse (FR / DE / ES for EU; UK warehouse for UK destinations where applicable) and issue a wholesale quote. Freight is calculated to your address — inquire for details.</span></div></div>
         <div class="step"><div class="num">4</div><div><strong>Payment → truck → delivery</strong><br /><span style="color:var(--muted)">After payment: truck booking typically 1–3 days; transit typically 4–48h by distance. Working target for eligible EU orders: <strong>delivery within 7 days</strong>.</span></div></div>
@@ -340,7 +340,7 @@
       <div class="grid-3">
         <div class="card">
           <h3>TPED cylinder conformity</h3>
-          <p><strong>TPED (notified body 0036 / EN ISO 11118 / 2010/35/EU)</strong> cylinder conformity documents are available on request to qualified B2B buyers against the SKU you inquire.</p>
+          <p><strong>TPED (notified body 0036 / EN ISO 11118 / 2010/35/EU)</strong> cylinder conformity documents are available on request to qualified B2B buyers against the SKU you inquire. Hub: <a href="/documents.html">documents</a> · deep answer: <a href="/answers/tped-0036.html">TPED 0036</a>.</p>
         </div>
         <div class="card">
           <h3>Food-grade / E942 positioning</h3>
@@ -372,6 +372,19 @@
       </div>
     </section>
 
+
+    <section id="related-answers">
+      <h2>Related answers</h2>
+      <div class="related">
+        <div class="card"><h3><a href="/answers/german-delivery.html">German delivery</a></h3><p>DE addresses can ship from other EU warehouses (FR/ES).</p></div>
+        <div class="card"><h3><a href="/answers/no-samples.html">No samples</a></h3><p>Pallet MOQ only · UN1070 DG.</p></div>
+        <div class="card"><h3><a href="/answers/pallet-quantity.html">Pallet quantity</a></h3><p>Default 504 · 6/carton.</p></div>
+        <div class="card"><h3><a href="/answers/ddp-door-to-door.html">DDP / door-to-door</a></h3><p>Delivered freight quotes on inquiry.</p></div>
+        <div class="card"><h3><a href="/documents.html">Documents</a></h3><p>TPED0036 on request for qualified B2B.</p></div>
+        <div class="card"><h3><a href="/answers/tped-0036.html">TPED 0036</a></h3><p>Deep answer on cylinder conformity.</p></div>
+      </div>
+    </section>
+
     <section id="faq">
       <h2>Fulfilment FAQ</h2>
       <div class="faq-list">
@@ -389,7 +402,7 @@
         </details>
         <details class="faq">
           <summary>Can German buyers be supplied if Germany warehouse stock is not ready?</summary>
-          <p>Yes. German delivery addresses can be fulfilled from other EU warehouses (for example France or Spain) when that is nearer, faster, or the available option. Routing is confirmed on inquiry — we do not separately promise DE warehouse stock ready.</p>
+          <p>Yes. German delivery addresses can be fulfilled from other EU warehouses (for example France or Spain) when that is nearer, faster, or the available option. Routing is confirmed on inquiry — we do not separately promise DE warehouse stock ready. <a href="/answers/german-delivery.html">Learn more — German delivery</a>.</p>
         </details>
       </div>
     </section>
@@ -423,7 +436,7 @@
           <a href="mailto:creamtank@mail.grokbot.com">creamtank@mail.grokbot.com</a>
         </div>
       </div>
-      <p class="fine">© CreamTank. All rights reserved. · <a href="/#products">Products</a> · <a href="/fulfilment.html">Fulfilment</a> · <a href="/answers/pallet-quantity.html">Answers</a> · <a href="/#faq">FAQ</a> · <a href="/#inquiry">Contact</a></p>
+      <p class="fine">© CreamTank. All rights reserved. · <a href="/products.html">Products</a> · <a href="/fulfilment.html">Fulfilment</a> · <a href="/documents.html">Documents</a> · <a href="/answers/pallet-quantity.html">Answers</a> · <a href="/#faq">FAQ</a> · <a href="/#inquiry">Contact</a></p>
     </footer>
   </div>
 </body>

@@ -162,8 +162,7 @@
     footer .fine { margin-top: 1.25rem; font-size: 0.8rem; opacity: 0.85; }
     .crumbs { color: var(--muted); font-size: 0.85rem; margin: 0.5rem 0 0; }
     .crumbs a { color: var(--muted); }
-    .related { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
-    @media (max-width: 860px) { .related { grid-template-columns: 1fr; } }
+    .related { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
     .hero-simple { padding: 2rem 0 1rem; }
     .prose p { color: var(--muted); margin: 0 0 1rem; max-width: 46rem; }
     .prose ul { color: var(--muted); margin: 0 0 1rem; padding-left: 1.2rem; max-width: 46rem; }
@@ -233,6 +232,7 @@
       <nav aria-label="Primary">
         <a href="/products.html">Products</a>
         <a href="/fulfilment.html">Fulfilment</a>
+        <a href="/documents.html">Documents</a>
         <a href="/#faq">FAQ</a>
         <a href="/#inquiry">Request a quote</a>
       </nav>
@@ -285,21 +285,24 @@
         </details>
         <details class="faq">
           <summary>Do you send free samples?</summary>
-          <p><strong>No samples.</strong> Wholesale starts at pallet MOQ only. Product ships as dangerous goods (UN1070).</p>
+          <p><strong>No samples.</strong> Wholesale starts at pallet MOQ only. Product ships as dangerous goods (UN1070). <a href="/answers/no-samples.html">Learn more — no samples</a>.</p>
         </details>
       </div>
     </section>
 
-    <section id="related">
+        <section id="related">
       <h2>Related answers &amp; pages</h2>
       <div class="related">
-        <div class="card"><h3><a href="/answers/ddp-door-to-door.html">DDP / door-to-door</a></h3><p>How to inquire for delivered freight — no public freight numbers.</p></div>
-        <div class="card"><h3><a href="/answers/tped-0036.html">TPED 0036 documents</a></h3><p>What qualified B2B buyers can request on inquiry.</p></div>
-        <div class="card"><h3><a href="/fulfilment.html">Fulfilment</a></h3><p>FR · DE · ES + UK · delivery typically within 7 days.</p></div>
+        <div class="card"><h3><a href="/answers/pallet-quantity.html">Pallet quantity</a></h3><p>Default 504 · MOQ 1 pallet · packing 6/carton.</p></div>
+        <div class="card"><h3><a href="/answers/no-samples.html">No samples</a></h3><p>Why CreamTank does not ship sample packs (UN1070 DG).</p></div>
+        <div class="card"><h3><a href="/answers/german-delivery.html">German delivery</a></h3><p>DE addresses can ship from other EU warehouses (FR/ES).</p></div>
+        <div class="card"><h3><a href="/answers/ddp-door-to-door.html">DDP / door-to-door</a></h3><p>How to inquire for delivered freight quotes.</p></div>
+        <div class="card"><h3><a href="/answers/tped-0036.html">TPED 0036</a></h3><p>Cylinder conformity on request for qualified B2B buyers.</p></div>
+        <div class="card"><h3><a href="/documents.html">Documents hub</a></h3><p>TPED0036 on request — ask for the current document list.</p></div>
       </div>
     </section>
 
-    <section id="cta">
+<section id="cta">
       <div class="contact-box">
         <h3>Inquire for a B2B wholesale quote</h3>
         <p>Verified foodservice, bakery, food-processing or industrial buyers only. Include destination, SKU preference, pallet quantity and lawful end use.</p>
@@ -327,7 +330,7 @@
           <a href="mailto:creamtank@mail.grokbot.com">creamtank@mail.grokbot.com</a>
         </div>
       </div>
-      <p class="fine">© CreamTank. All rights reserved. · <a href="/products.html">Products</a> · <a href="/fulfilment.html">Fulfilment</a> · <a href="/answers/pallet-quantity.html">Answers</a> · <a href="/#faq">FAQ</a> · <a href="/#inquiry">Contact</a></p>
+      <p class="fine">© CreamTank. All rights reserved. · <a href="/products.html">Products</a> · <a href="/fulfilment.html">Fulfilment</a> · <a href="/documents.html">Documents</a> · <a href="/answers/pallet-quantity.html">Answers</a> · <a href="/#faq">FAQ</a> · <a href="/#inquiry">Contact</a></p>
     </footer>
   </div>
 </body>
