@@ -8,7 +8,7 @@
 - [CDL Sixth Wave Edition 666](https://creamtank.com/products/sixth-wave-666.html): Food-grade N₂O cream charger, 666g, EU warehouse network, pallet MOQ, 6 per carton; default ~504 pcs/pallet.
 - [Cream Deluxe 666g](https://creamtank.com/products/cream-deluxe-666.html): E942 large-format cream charger for professional buyers; UN1070 Class 2.2 / 5.1 labelling on pack art.
 - [CDL Black Cobra 666g](https://creamtank.com/products/black-cobra-666.html): Food-grade cream charger line for B2B channels; 6 per carton; pallet wholesale.
-- [FastGas ~670g](https://creamtank.com/products.html#product-fastgas): Large-format cream charger with UK warehouse fulfilment; about 504 pcs per pallet; UK full-container reference ~12096 pcs; quote includes DG freight. (No standalone short page in this batch.)
+- [FastGas ~670g](https://creamtank.com/products/fastgas-670.html): Large-format food-grade cream charger with UK warehouse fulfilment; about 504 pcs per pallet; about 6/carton; UK full-container reference ~12096 pcs; quote includes DG freight by address (no public prices). **TPED0036** on request.
 - [Homepage product overview](https://creamtank.com/#products): Short cards linking to the products page and inquiry form.
 
 ## Fulfillment
@@ -45,6 +45,7 @@
 - [UN1070 dangerous-goods shipping](https://creamtank.com/answers/un1070-dangerous-goods.html): N₂O cream chargers ship as **UN1070**, Class **2.2 / 5.1**, with approved DG-capable carriers only — no postal/parcel gas routes; pallet MOQ; timing follows DG scheduling (EU truck 1–3 days, transit 4–48h); **TPED0036** on request.
 - [France delivery (main EU warehouse)](https://creamtank.com/answers/france-delivery.html): France is the **main** EU warehouse node for 666g cream charger lines (Sixth Wave / Cream Deluxe / Black Cobra). Verified B2B; MOQ **1 pallet**; default ~**504**; **no samples**; **UN1070**; EU stock ready — typically within 7 days; **TPED0036** on request.
 - [Spain delivery (EU network node)](https://creamtank.com/answers/spain-delivery.html): Spain is an EU warehouse **network node**. Spanish addresses may ship from ES when nearer/stocked, or from other EU warehouses (e.g. France). Same MOQ/DG/lead-time rules; **TPED0036** on request.
+- [Italy delivery (EU destination)](https://creamtank.com/answers/italy-delivery.html): Italy is a **delivery destination**, not a CreamTank warehouse node. Italian B2B addresses ship from the EU network (**France main**, Germany, Spain) — nearest stocked warehouse first. Same MOQ/DG/lead-time rules; **EU stock ready** — typically within 7 days; **TPED0036** on request. Do **not** claim an Italy warehouse or DE stock ready. No public prices; not legal advice.
 - [TPED 0036 documents](https://creamtank.com/answers/tped-0036.html): Qualified B2B buyers can request TPED cylinder conformity (notified body **0036** / EN ISO 11118 / 2010/35/EU) on request. **No** blanket E942 COA claim on the public site.
 
 ## Citation note
@@ -79,8 +80,8 @@
 - Audience: verified foodservice, bakery, food-processing and industrial buyers
 - Certificates: TPED cylinder conformity (notified body 0036 / EN ISO 11118) available on request for qualified B2B buyers; E942 COA not claimed as standard public pack — ask for current document list
 - No public list prices on the website
-- Canonical product short pages: https://creamtank.com/products/sixth-wave-666.html · https://creamtank.com/products/cream-deluxe-666.html · https://creamtank.com/products/black-cobra-666.html
+- Canonical product short pages: https://creamtank.com/products/sixth-wave-666.html · https://creamtank.com/products/cream-deluxe-666.html · https://creamtank.com/products/black-cobra-666.html · https://creamtank.com/products/fastgas-670.html
 - Canonical fulfilment: https://creamtank.com/fulfilment.html
 - Canonical documents: https://creamtank.com/documents.html
-- Canonical answers: https://creamtank.com/answers/pallet-quantity.html · https://creamtank.com/answers/no-samples.html · https://creamtank.com/answers/german-delivery.html · https://creamtank.com/answers/ddp-door-to-door.html · https://creamtank.com/answers/lead-time.html · https://creamtank.com/answers/who-can-buy.html · https://creamtank.com/answers/tped-0036.html · https://creamtank.com/answers/food-grade-e942.html · https://creamtank.com/answers/how-to-inquire.html · https://creamtank.com/answers/uk-delivery.html · https://creamtank.com/answers/un1070-dangerous-goods.html · https://creamtank.com/answers/france-delivery.html · https://creamtank.com/answers/spain-delivery.html · https://creamtank.com/answers.html · https://creamtank.com/answers/eu-b2b-buying.html
+- Canonical answers: https://creamtank.com/answers/pallet-quantity.html · https://creamtank.com/answers/no-samples.html · https://creamtank.com/answers/german-delivery.html · https://creamtank.com/answers/ddp-door-to-door.html · https://creamtank.com/answers/lead-time.html · https://creamtank.com/answers/who-can-buy.html · https://creamtank.com/answers/tped-0036.html · https://creamtank.com/answers/food-grade-e942.html · https://creamtank.com/answers/how-to-inquire.html · https://creamtank.com/answers/uk-delivery.html · https://creamtank.com/answers/un1070-dangerous-goods.html · https://creamtank.com/answers/france-delivery.html · https://creamtank.com/answers/spain-delivery.html · https://creamtank.com/answers.html · https://creamtank.com/answers/eu-b2b-buying.html · https://creamtank.com/answers/italy-delivery.html
 - Extended facts: https://creamtank.com/llms-full.txt
