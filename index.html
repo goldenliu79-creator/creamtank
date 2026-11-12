@@ -33,6 +33,8 @@
       --font: "Segoe UI", system-ui, -apple-system, sans-serif;
     }
     * { box-sizing: border-box; }
+    html { font-size: 16px; }
+    html, body { overflow-x: hidden; }
     body {
       margin: 0;
       font-family: var(--font);
@@ -47,43 +49,39 @@
     .wrap { width: min(var(--max), calc(100% - 2rem)); margin: 0 auto; }
     header.site {
       display: flex; align-items: center; justify-content: space-between;
-      padding: 1.1rem 0; gap: 1rem; flex-wrap: wrap;
+      padding: 0.7rem 0 0.55rem; gap: 0.75rem 1rem; flex-wrap: wrap;
     }
     .logo {
-      font-weight: 800; letter-spacing: 0.02em; font-size: 1.25rem;
+      font-weight: 800; letter-spacing: 0.02em; font-size: 1.2rem;
       color: var(--text); text-decoration: none;
     }
     .logo span { color: var(--accent2); }
-    nav { display: flex; gap: 1rem; flex-wrap: wrap; font-size: 0.95rem; }
+    nav { display: flex; gap: 0.7rem 0.95rem; flex-wrap: wrap; font-size: 0.92rem; }
     nav a { color: var(--muted); text-decoration: none; }
-    nav a:hover { color: var(--text); }
-    .hero {
-      padding: 2.5rem 0 3rem;
+    nav a:hover, nav a[href="#inquiry"] { color: var(--text); }
+    .hero { padding: 0.35rem 0 1.35rem; }
+    .hero-grid {
       display: grid;
       grid-template-columns: 1.2fr 0.8fr;
-      gap: 2rem;
-      align-items: center;
-    }
-    @media (max-width: 860px) {
-      .hero { grid-template-columns: 1fr; }
+      gap: 1.25rem 1.75rem;
+      align-items: start;
     }
     .eyebrow {
       display: inline-flex; gap: 0.45rem; flex-wrap: wrap;
       color: var(--accent2); font-size: 0.85rem; font-weight: 600;
-      text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.75rem;
+      text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.55rem;
     }
     .stock-banner {
-      display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;
-      margin: 0 0 1.1rem;
-      padding: 0.85rem 1.05rem;
+      display: flex; align-items: center; gap: 0.65rem; flex-wrap: wrap;
+      margin: 0 0 0.85rem;
+      padding: 0.55rem 0.85rem;
       border-radius: 12px;
       background: linear-gradient(90deg, rgba(45,212,168,0.22), rgba(61,156,253,0.12));
       border: 1px solid rgba(45,212,168,0.55);
-      box-shadow: 0 0 0 1px rgba(45,212,168,0.15), 0 10px 30px rgba(0,0,0,0.25);
     }
     .stock-banner .pulse {
       display: inline-flex; align-items: center; justify-content: center;
-      min-width: 3.4rem; height: 1.7rem; padding: 0 0.55rem;
+      min-width: 3.4rem; height: 1.55rem; padding: 0 0.5rem;
       border-radius: 999px; font-size: 0.72rem; font-weight: 800;
       letter-spacing: 0.04em; text-transform: uppercase;
       color: #041018; background: var(--accent2);
@@ -93,169 +91,181 @@
       0%, 100% { box-shadow: 0 0 0 0 rgba(45,212,168,0.55); }
       50% { box-shadow: 0 0 0 8px rgba(45,212,168,0); }
     }
-    .stock-banner .copy { font-size: 1.02rem; font-weight: 700; line-height: 1.35; }
+    .stock-banner .copy { font-size: 0.95rem; font-weight: 700; line-height: 1.35; }
     .stock-banner .copy span { color: var(--accent2); }
-    .stock-banner .sub { display: block; font-size: 0.86rem; font-weight: 500; color: var(--muted); margin-top: 0.15rem; }
-    h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.15; margin: 0 0 1rem; }
-    .lead { color: var(--muted); font-size: 1.05rem; margin: 0 0 1.4rem; max-width: 40rem; }
-    .trust {
-      color: var(--muted); font-size: 0.9rem; margin-top: 1rem;
-      padding: 0.75rem 1rem; background: rgba(255,255,255,0.03);
-      border: 1px solid var(--line); border-radius: 10px;
-    }
-    .btns { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+    h1 { font-size: clamp(1.75rem, 3.6vw, 2.4rem); line-height: 1.18; margin: 0 0 0.7rem; }
+    .lead { color: var(--muted); font-size: 1.02rem; margin: 0 0 1rem; max-width: 38rem; }
+    .lead strong { color: var(--text); font-weight: 650; }
+    .btns { display: flex; flex-wrap: wrap; gap: 0.65rem; }
     .btn {
       display: inline-flex; align-items: center; justify-content: center;
-      gap: 0.4rem; padding: 0.75rem 1.15rem; border-radius: 999px;
+      gap: 0.4rem; padding: 0.7rem 1.1rem; border-radius: 999px;
       font-weight: 650; border: 1px solid transparent; cursor: pointer;
-      text-decoration: none; font-size: 0.95rem;
+      text-decoration: none; font-size: 0.95rem; min-height: 44px;
     }
     .btn-primary { background: var(--accent); color: #041018; }
     .btn-primary:hover { filter: brightness(1.08); text-decoration: none; }
     .btn-secondary { background: transparent; color: var(--text); border-color: var(--line); }
     .btn-secondary:hover { border-color: var(--accent); text-decoration: none; }
-    .btn-ghost { background: var(--surface); color: var(--text); border-color: var(--line); }
-    .hero-card {
+    .facts {
       background: linear-gradient(160deg, var(--surface), #15202b);
-      border: 1px solid var(--line); border-radius: calc(var(--radius) + 4px);
-      padding: 1.25rem; box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+      border: 1px solid var(--line); border-radius: 18px;
+      padding: 0.85rem;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+      display: grid; gap: 0.55rem;
     }
-    .hero-card h3 { margin: 0 0 0.75rem; font-size: 1rem; }
-    .hero-card ul { margin: 0; padding-left: 1.1rem; color: var(--muted); }
-    .hero-card li { margin: 0.35rem 0; }
-    section { padding: 2.75rem 0; }
-    section h2 {
-      font-size: 1.55rem; margin: 0 0 0.5rem;
+    .fact {
+      background: rgba(15, 20, 25, 0.35);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 0.6rem 0.75rem 0.65rem;
     }
-    .section-lead { color: var(--muted); margin: 0 0 1.5rem; max-width: 42rem; }
+    .fact .k {
+      display: block; font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.05em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 0.15rem;
+    }
+    .fact .v { display: block; font-weight: 750; color: var(--text); font-size: 1rem; line-height: 1.3; }
+    .fact .s { display: block; color: var(--muted); font-size: 0.84rem; margin-top: 0.12rem; line-height: 1.4; }
+    section { padding: 1.65rem 0; }
+    section h2 { font-size: 1.4rem; margin: 0 0 0.4rem; }
+    .section-lead { color: var(--muted); margin: 0 0 1rem; max-width: 44rem; }
     .grid-3 {
-      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;
-    }
-    @media (max-width: 860px) {
-      .grid-3 { grid-template-columns: 1fr; }
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.85rem;
     }
     .card {
       background: var(--surface); border: 1px solid var(--line);
-      border-radius: var(--radius); padding: 1.15rem 1.2rem;
+      border-radius: var(--radius); padding: 0.95rem 1.05rem;
     }
-    .card h3 { margin: 0 0 0.45rem; font-size: 1.05rem; }
+    .card h3 { margin: 0 0 0.3rem; font-size: 1.02rem; }
     .card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
     .products {
-      display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.1rem;
-    }
-    @media (max-width: 760px) {
-      .products { grid-template-columns: 1fr; }
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.9rem;
     }
     .product {
       background: var(--surface); border: 1px solid var(--line);
       border-radius: var(--radius); overflow: hidden; display: grid;
-      grid-template-columns: 140px 1fr; min-height: 160px;
-    }
-    @media (max-width: 560px) {
-      .product { grid-template-columns: 1fr; }
+      grid-template-columns: 140px 1fr; min-height: 150px;
     }
     .product img {
-      width: 100%; height: 100%; object-fit: cover; background: #0b1016; min-height: 160px;
+      width: 100%; height: 100%; object-fit: contain; background: #0b1016;
+      min-height: 150px; padding: 0.4rem;
     }
-    .product .body { padding: 1rem 1.1rem; display: flex; flex-direction: column; gap: 0.45rem; }
+    .product .body { padding: 0.9rem 1rem; display: flex; flex-direction: column; gap: 0.35rem; }
     .product .tag {
       align-self: flex-start; font-size: 0.75rem; font-weight: 700;
       color: var(--accent2); letter-spacing: 0.04em; text-transform: uppercase;
     }
-    .product h3 { margin: 0; font-size: 1.05rem; }
+    .product h3 { margin: 0; font-size: 1.02rem; }
     .product p { margin: 0; color: var(--muted); font-size: 0.9rem; flex: 1; }
-    .steps { display: grid; gap: 0.85rem; }
+    .product-links { margin: 0.15rem 0 0; font-size: 0.9rem; }
+    .steps {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem;
+    }
     .step {
-      display: grid; grid-template-columns: 42px 1fr; gap: 0.85rem;
+      display: grid; grid-template-columns: 36px 1fr; gap: 0.65rem;
       align-items: start; background: var(--surface); border: 1px solid var(--line);
-      border-radius: var(--radius); padding: 1rem 1.1rem;
+      border-radius: var(--radius); padding: 0.85rem 0.9rem;
     }
     .num {
-      width: 42px; height: 42px; border-radius: 50%;
-      display: grid; place-items: center; font-weight: 800;
+      width: 36px; height: 36px; border-radius: 50%;
+      display: grid; place-items: center; font-weight: 800; font-size: 0.9rem;
       background: var(--surface2); color: var(--accent2);
     }
-    .two-col {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;
+    .step strong { display: block; font-size: 0.95rem; }
+    .step span { color: var(--muted); font-size: 0.88rem; }
+    .fulfil-note {
+      margin: 0.9rem 0 0;
+      padding: 0.9rem 1rem;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      color: var(--muted);
+      font-size: 0.95rem;
     }
-    @media (max-width: 860px) {
-      .two-col { grid-template-columns: 1fr; }
+    .fulfil-note strong { color: var(--text); }
+    .quality {
+      display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.85rem;
     }
+    .quality .card p { font-size: 0.92rem; }
     .note {
-      border-left: 3px solid var(--warn); padding: 0.75rem 1rem;
+      border-left: 3px solid var(--warn); padding: 0.65rem 0.9rem;
       background: rgba(245, 158, 11, 0.08); color: #fde68a;
-      border-radius: 0 10px 10px 0; font-size: 0.9rem; margin-top: 1rem;
+      border-radius: 0 10px 10px 0; font-size: 0.9rem; margin: 0.9rem 0 0;
+    }
+    .two-col {
+      display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 1.1rem;
     }
     form.inquiry {
-      display: grid; gap: 0.85rem;
+      display: grid; gap: 0.75rem;
       background: var(--surface); border: 1px solid var(--line);
-      border-radius: var(--radius); padding: 1.25rem;
+      border-radius: var(--radius); padding: 1.15rem;
     }
-    label { display: grid; gap: 0.35rem; font-size: 0.88rem; color: var(--muted); }
+    label { display: grid; gap: 0.3rem; font-size: 0.88rem; color: var(--muted); }
     input, select, textarea {
       width: 100%; padding: 0.7rem 0.8rem; border-radius: 10px;
       border: 1px solid var(--line); background: #0f1620; color: var(--text);
-      font: inherit;
+      font: inherit; font-size: 1rem;
     }
-    textarea { min-height: 110px; resize: vertical; }
-    .row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem; }
-    @media (max-width: 640px) { .row-2 { grid-template-columns: 1fr; } }
+    textarea { min-height: 100px; resize: vertical; }
+    .row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
     .micro { color: var(--muted); font-size: 0.85rem; margin: 0; }
     .contact-box {
       background: linear-gradient(160deg, #173047, #14243a);
       border: 1px solid var(--line); border-radius: var(--radius);
-      padding: 1.25rem; display: flex; flex-direction: column; gap: 0.85rem;
+      padding: 1.15rem; display: flex; flex-direction: column; gap: 0.7rem;
+      height: fit-content;
     }
     .contact-box h3 { margin: 0; }
     .contact-box p { margin: 0; color: var(--muted); }
-
-    .stills {
-      display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.85rem;
-      margin: 1.25rem 0 0.5rem;
+    .dest-index {
+      margin: 0 0 0.9rem;
+      padding: 0.85rem 1rem;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      color: var(--muted);
+      font-size: 0.95rem;
     }
-    @media (max-width: 860px) { .stills { grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 480px) { .stills { grid-template-columns: 1fr; } }
-    .stills figure {
-      margin: 0; background: var(--surface); border: 1px solid var(--line);
-      border-radius: var(--radius); overflow: hidden;
-    }
-    .stills img {
-      display: block; width: 100%; height: 180px; object-fit: cover; background: #0b1016;
-    }
-    .stills figcaption {
-      padding: 0.55rem 0.7rem; color: var(--muted); font-size: 0.82rem; line-height: 1.35;
-    }
-    .answers-hub {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.85rem;
-      margin-top: 1rem;
-    }
-    .faq-list { display: grid; gap: 0.75rem; }
+    .dest-index strong { color: var(--text); }
+    .dest-links { display: flex; flex-wrap: wrap; gap: 0.35rem 0.75rem; margin-top: 0.4rem; }
+    .faq-list { display: grid; gap: 0.6rem; }
     details.faq {
       background: var(--surface); border: 1px solid var(--line);
-      border-radius: var(--radius); padding: 0.95rem 1.15rem;
+      border-radius: var(--radius); padding: 0.8rem 1.05rem;
     }
     details.faq summary {
       cursor: pointer; font-weight: 650; color: var(--text);
-      list-style: none;
+      list-style: none; font-size: 0.98rem;
+      display: flex; align-items: flex-start; justify-content: space-between;
+      gap: 0.75rem;
     }
     details.faq summary::-webkit-details-marker { display: none; }
     details.faq summary::after {
-      content: "+"; float: right; color: var(--accent2); font-weight: 800;
+      content: "+"; color: var(--accent2); font-weight: 800;
+      flex: 0 0 auto; line-height: 1.2;
     }
     details.faq[open] summary::after { content: "–"; }
-    details.faq p { margin: 0.75rem 0 0; color: var(--muted); font-size: 0.95rem; }
+    details.faq p { margin: 0.7rem 0 0; color: var(--muted); font-size: 0.95rem; }
     footer.site {
-      border-top: 1px solid var(--line); margin-top: 2rem;
-      padding: 2rem 0 2.5rem; color: var(--muted); font-size: 0.92rem;
+      border-top: 1px solid var(--line); margin-top: 1.25rem;
+      padding: 1.25rem 0 1.6rem; color: var(--muted); font-size: 0.9rem;
     }
-    footer .grid {
-      display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 1.25rem;
+    footer .fine { margin: 0.65rem 0 0; font-size: 0.8rem; opacity: 0.85; }
+    footer nav { gap: 0.65rem 0.9rem; margin-top: 0.35rem; }
+    @media (max-width: 860px) {
+      html { font-size: 15px; }
+      .hero-grid, .grid-3, .quality, .two-col, .steps { grid-template-columns: 1fr; }
+      .products { grid-template-columns: 1fr; }
+      section { padding: 1.4rem 0; }
+      nav { font-size: 0.88rem; gap: 0.45rem 0.75rem; }
     }
-    @media (max-width: 760px) {
-      footer .grid { grid-template-columns: 1fr; }
+    @media (max-width: 560px) {
+      .product { grid-template-columns: 1fr; }
+      .product img { min-height: 180px; max-height: 220px; }
+      .row-2 { grid-template-columns: 1fr; }
+      .btns .btn { flex: 1 1 100%; }
     }
-    footer strong { color: var(--text); }
-    footer .fine { margin-top: 1.25rem; font-size: 0.8rem; opacity: 0.85; }
   </style>
   <script type="application/ld+json">
   {
@@ -402,30 +412,10 @@
         "@id": "https://creamtank.com/#catalog",
         "name": "CreamTank B2B cream charger range",
         "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": { "@id": "https://creamtank.com/#product-sixth-wave" },
-            "availability": "https://schema.org/InStock",
-            "businessFunction": "https://schema.org/Sell"
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": { "@id": "https://creamtank.com/#product-cream-deluxe" },
-            "availability": "https://schema.org/InStock",
-            "businessFunction": "https://schema.org/Sell"
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": { "@id": "https://creamtank.com/#product-black-cobra" },
-            "availability": "https://schema.org/InStock",
-            "businessFunction": "https://schema.org/Sell"
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": { "@id": "https://creamtank.com/#product-fastgas" },
-            "availability": "https://schema.org/InStock",
-            "businessFunction": "https://schema.org/Sell"
-          }
+          { "@type": "Offer", "itemOffered": { "@id": "https://creamtank.com/#product-sixth-wave" }, "availability": "https://schema.org/InStock", "businessFunction": "https://schema.org/Sell" },
+          { "@type": "Offer", "itemOffered": { "@id": "https://creamtank.com/#product-cream-deluxe" }, "availability": "https://schema.org/InStock", "businessFunction": "https://schema.org/Sell" },
+          { "@type": "Offer", "itemOffered": { "@id": "https://creamtank.com/#product-black-cobra" }, "availability": "https://schema.org/InStock", "businessFunction": "https://schema.org/Sell" },
+          { "@type": "Offer", "itemOffered": { "@id": "https://creamtank.com/#product-fastgas" }, "availability": "https://schema.org/InStock", "businessFunction": "https://schema.org/Sell" }
         ]
       },
       {
@@ -434,98 +424,10 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "What are food-grade N₂O cream chargers (E942) used for?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Food-grade N₂O cream chargers are large-format cylinders of nitrous oxide authorised as food additive E942, used as a whipped-cream / food propellant in professional foodservice, bakery and food-processing channels. CreamTank supplies them for verified B2B buyers only — not for recreational use. See https://creamtank.com/answers/food-grade-e942.html."
-            }
-          },
-          {
-            "@type": "Question",
             "name": "What is the minimum order quantity (MOQ) for CreamTank wholesale?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The minimum order quantity is 1 pallet. CreamTank does not fulfil loose retail or small-parcel orders. Quotes cover product plus dangerous-goods freight by destination."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Which EU and UK countries can you fulfil cream charger pallets from?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "CreamTank offers EU warehouse fulfilment through a network in France, Germany and Spain, plus UK warehouse fulfilment for selected SKUs such as FastGas ~670g. Dispatch warehouse is selected by the buyer delivery address, prioritizing the nearest warehouse; routing is confirmed on inquiry. Italian, Netherlands, Belgian and Polish addresses ship from the EU network — Italy, the Netherlands, Belgium and Poland are delivery destinations, not warehouse nodes. See https://creamtank.com/answers/italy-delivery.html, https://creamtank.com/answers/netherlands-delivery.html, https://creamtank.com/answers/belgium-delivery.html and https://creamtank.com/answers/poland-delivery.html."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can you deliver cream charger pallets to Italy?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, to verified Italian B2B addresses. Italy is a delivery destination, not a CreamTank warehouse node. Orders ship from the EU warehouse network in France (main), Germany and Spain — nearest stocked warehouse first. MOQ 1 pallet; no samples; freight quoted by address. See https://creamtank.com/answers/italy-delivery.html."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can you deliver cream charger pallets to the Netherlands?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, to verified Netherlands B2B addresses. The Netherlands is a delivery destination, not a CreamTank warehouse node. Orders ship from the EU warehouse network in France (main), Germany and Spain — nearest stocked warehouse first. MOQ 1 pallet; no samples; freight quoted by address. See https://creamtank.com/answers/netherlands-delivery.html."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can you deliver cream charger pallets to Belgium?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, to verified Belgium B2B addresses. Belgium is a delivery destination, not a CreamTank warehouse node. Orders ship from the EU warehouse network in France (main), Germany and Spain — nearest stocked warehouse first. MOQ 1 pallet; no samples; freight quoted by address. See https://creamtank.com/answers/belgium-delivery.html."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can you deliver cream charger pallets to Poland?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, to verified Poland B2B addresses. Poland is a delivery destination, not a CreamTank warehouse node. Orders ship from the EU warehouse network in France (main), Germany and Spain — nearest stocked warehouse first. MOQ 1 pallet; no samples; freight quoted by address. See https://creamtank.com/answers/poland-delivery.html."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What should my site be able to receive for a UN1070 cream charger pallet?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Give a business delivery address that can accept a pallet from a dangerous-goods capable carrier. Note dock, forklift or tail-lift needs on inquiry. CreamTank ships pallet orders only with approved DG-capable carriers — not postal or parcel gas routes. See https://creamtank.com/answers/receiving-un1070-pallet.html."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How fast can EU pallet orders of food-grade cream chargers be delivered?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "EU warehouse stock is ready for professional B2B orders. For eligible destinations, delivery typically within 7 days after payment: truck booking typically 1–3 days; transit typically 4–48 hours depending on distance and dangerous-goods carrier scheduling. Exact timing is confirmed with your quote."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Who can buy CreamTank food-grade N₂O cream chargers?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "We sell only to verified business customers for lawful foodservice, bakery, food-processing or industrial uses. Recreational-use requests are declined. Buyer credentials and intended use are part of every wholesale conversation. See https://creamtank.com/answers/who-can-buy.html."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you sell cream chargers to consumers or for recreational use in the EU?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "No. CreamTank supplies verified B2B foodservice, bakery, food-processing or industrial buyers only. The product is food-grade N₂O (E942) for professional whipped-cream / food-propellant use. Recreational and entertainment-use requests are declined. This is commercial buyer guidance, not legal advice; buyers remain responsible for local rules. See https://creamtank.com/answers/eu-b2b-buying.html."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you provide certificates, SDS and compliance documents?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "For qualified B2B buyers, CreamTank can share cylinder conformity documents under TPED (notified body 0036 / EN ISO 11118) on request against the SKU you inquire. Products are offered as food-grade wholesale cream chargers; an E942 certificate of analysis (COA) is not claimed as part of the standard public pack. Ask for the current document list with your inquiry."
+              "text": "The minimum order quantity is 1 pallet. CreamTank does not fulfil loose retail or small-parcel orders. Default EU pallet load is 504 pcs. Quotes cover product plus dangerous-goods freight by destination. See https://creamtank.com/answers/pallet-quantity.html."
             }
           },
           {
@@ -538,10 +440,26 @@
           },
           {
             "@type": "Question",
-            "name": "What happens after payment for an EU pallet order?",
+            "name": "How fast can EU pallet orders of food-grade cream chargers be delivered?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "After payment: truck booking typically 1–3 days; then transit typically 4–48 hours depending on distance and dangerous-goods carrier scheduling. Working target for eligible destinations: delivery typically within 7 days. Freight is quoted to your delivery address — see https://creamtank.com/answers/lead-time.html and https://creamtank.com/answers/ddp-door-to-door.html."
+              "text": "EU warehouse stock is ready for professional B2B orders. For eligible destinations, delivery typically within 7 days after payment: truck booking typically 1–3 days; transit typically 4–48 hours depending on distance and dangerous-goods carrier scheduling. Exact timing is confirmed with your quote. See https://creamtank.com/answers/lead-time.html."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Who can buy CreamTank food-grade N₂O cream chargers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We sell only to verified business customers for lawful foodservice, bakery, food-processing or industrial uses. Recreational-use requests are declined. Buyer credentials and intended use are part of every wholesale conversation. See https://creamtank.com/answers/who-can-buy.html."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you provide certificates, SDS and compliance documents?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For qualified B2B buyers, CreamTank can share cylinder conformity documents under TPED (notified body 0036 / EN ISO 11118) on request against the SKU you inquire. Products are offered as food-grade wholesale cream chargers; an E942 certificate of analysis (COA) is not claimed as part of the standard public pack. Ask for the current document list with your inquiry. See https://creamtank.com/answers/tped-0036.html and https://creamtank.com/documents.html."
             }
           },
           {
@@ -550,14 +468,6 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Yes. German delivery addresses can be fulfilled from the nearest stocked warehouse among France, Germany and Spain. Routing is confirmed on inquiry. CreamTank does not separately promise Germany warehouse stock ready. See https://creamtank.com/answers/german-delivery.html."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How do I inquire for a B2B wholesale quote?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Use the inquiry form on https://creamtank.com/#inquiry, email creamtank@mail.grokbot.com, WhatsApp Jay at +852 57143665, or Telegram @Jay_z189. Include company, delivery country/address, SKU interest, pallet quantity and lawful food or industrial end use. See https://creamtank.com/answers/how-to-inquire.html."
             }
           }
         ]
@@ -575,67 +485,54 @@
         <a href="/fulfilment.html">Fulfilment</a>
         <a href="/documents.html">Documents</a>
         <a href="/answers.html">Answers</a>
-        <a href="#buying">How to order</a>
         <a href="#faq">FAQ</a>
         <a href="#inquiry">Request a quote</a>
       </nav>
     </header>
 
     <section class="hero" id="top">
-      <div>
-        <div class="eyebrow">B2B · Food-grade propellant · Pallet wholesale</div>
-        <div class="stock-banner" role="status" aria-label="EU stock available">
-          <span class="pulse">In stock</span>
-          <div class="copy">
-            <span>EU warehouse stock ready</span> — delivery typically within <strong>7 days</strong> for eligible pallet orders
-            <span class="sub">After payment: truck booking typically 1–3 days · transit typically 4–48h by distance · FR · DE · ES · UK warehouse option · Pallet MOQ · DG carriers</span>
+      <div class="stock-banner" role="status" aria-label="EU stock available">
+        <span class="pulse">In stock</span>
+        <div class="copy"><span>EU warehouse stock ready</span> — delivery typically within <strong>7 days</strong> for eligible pallet orders</div>
+      </div>
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">B2B · Food-grade propellant · Pallet wholesale</div>
+          <h1>Food-grade N₂O cream chargers for professional buyers</h1>
+          <p class="lead">Large-format <strong>E942 whipped-cream propellant</strong> for verified foodservice, bakery and industrial channels. Pallet wholesale from an <strong>EU warehouse network in France, Germany and Spain</strong>, plus <strong>UK warehouse</strong> fulfilment for selected SKUs.</p>
+          <div class="btns">
+            <a class="btn btn-primary" href="#inquiry">Request a wholesale quote</a>
+            <a class="btn btn-secondary" href="https://wa.me/85257143665" target="_blank" rel="noopener">WhatsApp +852 57143665</a>
           </div>
         </div>
-        <h1>Food-grade N₂O cream chargers for professional buyers</h1>
-        <p class="lead">CreamTank supplies large-format cream chargers positioned as <strong>E942 / food-grade whipped-cream propellant</strong> for verified foodservice, bakery, and industrial B2B channels — with <strong>EU warehouse fulfilment in France, Germany and Spain</strong> plus <strong>UK warehouse</strong> options.</p>
-        <div class="btns">
-          <a class="btn btn-primary" href="#inquiry">Request a wholesale quote</a>
-          <a class="btn btn-secondary" href="https://wa.me/85257143665" target="_blank" rel="noopener">WhatsApp +852 57143665</a>
-          <a class="btn btn-ghost" href="mailto:creamtank@mail.grokbot.com">Email sales</a>
-        </div>
-        <p class="trust">Minimum order <strong>1 pallet</strong> · Professional food &amp; industrial use only</p>
-      </div>
-      <aside class="hero-card" id="quick-facts">
-        <h3>Quick facts</h3>
-        <ul>
-          <li>MOQ: <strong>1 pallet</strong> (no small retail parcels)</li>
-          <li><strong>EU in stock</strong> — delivery typically within <strong>7 days</strong> (truck 1–3 days + transit 4–48h)</li>
-          <li>EU warehouses: <strong>France, Germany &amp; Spain</strong></li>
-          <li>EU: 666g large-format lines</li>
-          <li>UK warehouse fulfilment: FastGas ~670g</li>
-          <li>DG freight: UN 1070 · Class 2.2 / 5.1</li>
-          <li>Documents shared against inquired SKU</li>
-        </ul>
-      </aside>
-    </section>
-
-    <section id="serve">
-      <h2>Who we serve</h2>
-      <p class="section-lead">We work with verified business buyers. We do not market recreational use. Orders require a clear business purpose and buyer credentials.</p>
-      <div class="grid-3">
-        <div class="card">
-          <h3>Foodservice &amp; bakery</h3>
-          <p>Distributors and wholesale buyers sourcing whipped-cream propellant for professional kitchens.</p>
-        </div>
-        <div class="card">
-          <h3>Importers &amp; traders</h3>
-          <p>Companies with registration and a stated lawful end use across EU / UK fulfilment options.</p>
-        </div>
-        <div class="card">
-          <h3>Industrial / technical</h3>
-          <p>B2B buyers who need food-grade N₂O cylinders under wholesale terms.</p>
-        </div>
+        <aside class="facts" aria-label="Key wholesale facts">
+          <div class="fact">
+            <span class="k">Minimum order</span>
+            <span class="v">1 pallet</span>
+            <span class="s">No retail parcels, no samples, no public list prices</span>
+          </div>
+          <div class="fact">
+            <span class="k">Fulfilment</span>
+            <span class="v">EU: FR · DE · ES + UK</span>
+            <span class="s">Nearest stocked warehouse; routing confirmed on inquiry</span>
+          </div>
+          <div class="fact">
+            <span class="k">Lead time after payment</span>
+            <span class="v">Typically within 7 days</span>
+            <span class="s">Truck booking 1–3 days · transit typically 4–48h</span>
+          </div>
+          <div class="fact">
+            <span class="k">Buyer type</span>
+            <span class="v">Food-grade B2B only</span>
+            <span class="s">Professional foodservice &amp; industrial use</span>
+          </div>
+        </aside>
       </div>
     </section>
 
     <section id="products">
       <h2>Product range</h2>
-      <p class="section-lead">Large-format cream chargers for B2B channels — not the small consumer cartridge retail path used in some markets. Full specs: <a href="/products.html">products hub</a> · EU 666g short pages linked below.</p>
+      <p class="section-lead">Large-format cream chargers for B2B channels — not the small consumer cartridge retail path used in some markets. Full specs: <a href="/products.html">products hub</a>.</p>
       <div class="products">
         <article class="product" id="product-sixth-wave">
           <img src="assets/sixth-wave.png" alt="CDL Sixth Wave Edition 666 food-grade N2O cream charger for B2B wholesale" />
@@ -643,7 +540,7 @@
             <span class="tag">EU · 666g</span>
             <h3>CDL Sixth Wave Edition 666</h3>
             <p>Food-grade cream charger · 6 / carton · approx. 320 mm H × Ø70 mm × 2.5 mm wall (label reference) · pallet wholesale.</p>
-            <a href="/products/sixth-wave-666.html">Specs →</a> · <a href="#inquiry">Inquire →</a>
+            <p class="product-links"><a href="/products/sixth-wave-666.html">Specs →</a> · <a href="#inquiry">Inquire →</a></p>
           </div>
         </article>
         <article class="product" id="product-cream-deluxe">
@@ -652,7 +549,7 @@
             <span class="tag">EU · 666g</span>
             <h3>Cream Deluxe 666g</h3>
             <p>E942 food-grade large-format cylinder · pack art shows UN1070 / Class 2.2 &amp; 5.1 · B2B only.</p>
-            <a href="/products/cream-deluxe-666.html">Specs →</a> · <a href="#inquiry">Inquire →</a>
+            <p class="product-links"><a href="/products/cream-deluxe-666.html">Specs →</a> · <a href="#inquiry">Inquire →</a></p>
           </div>
         </article>
         <article class="product" id="product-black-cobra">
@@ -661,7 +558,7 @@
             <span class="tag">EU · 666g</span>
             <h3>CDL Black Cobra 666g</h3>
             <p>Cream charger line for professional buyers · 6 / carton · pallet MOQ.</p>
-            <a href="/products/black-cobra-666.html">Specs →</a> · <a href="#inquiry">Inquire →</a>
+            <p class="product-links"><a href="/products/black-cobra-666.html">Specs →</a> · <a href="#inquiry">Inquire →</a></p>
           </div>
         </article>
         <article class="product" id="product-fastgas">
@@ -670,180 +567,69 @@
             <span class="tag">UK warehouse · ~670g</span>
             <h3>FastGas ~670g</h3>
             <p>Large-format · 6 / carton · <strong>504 pcs / pallet</strong> · food-grade positioning · quote includes separate freight by destination.</p>
-            <a href="/products/fastgas-670.html">Specs →</a> · <a href="#inquiry">Inquire →</a>
+            <p class="product-links"><a href="/products/fastgas-670.html">Specs →</a> · <a href="#inquiry">Inquire →</a></p>
           </div>
         </article>
       </div>
       <p class="note">EU shipping tiers on inquiry: pallet freight to your address, or full truck (24 pallets) / full container (26 pallets) delivered pricing. No public list prices on this page.</p>
     </section>
 
-
-    <section id="product-stills">
-      <h2>Product stills</h2>
-      <p class="section-lead">Food-grade B2B product stills from the CreamTank large-format cream charger range. Specs and inquiry links sit on the <a href="/products.html">products hub</a>.</p>
-      <div class="stills">
-        <figure>
-          <img src="assets/sixth-wave.png" alt="CDL Sixth Wave Edition 666 food-grade N2O cream charger product still for B2B wholesale" />
-          <figcaption>CDL Sixth Wave Edition 666 · EU · food-grade B2B still</figcaption>
-        </figure>
-        <figure>
-          <img src="assets/cream-deluxe.png" alt="Cream Deluxe 666g E942 food-grade cream charger product still for professional buyers" />
-          <figcaption>Cream Deluxe 666g · E942 food-grade product still</figcaption>
-        </figure>
-        <figure>
-          <img src="assets/black-cobra.png" alt="CDL Black Cobra 666g food-grade cream charger product still for B2B channels" />
-          <figcaption>CDL Black Cobra 666g · professional B2B product still</figcaption>
-        </figure>
-        <figure>
-          <img src="assets/fastgas.png" alt="FastGas approximately 670g cream charger product still — UK warehouse fulfilment option" />
-          <figcaption>FastGas ~670g · UK warehouse option · product still</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section id="fulfilment">
-      <h2>EU &amp; UK warehouse fulfilment</h2>
-      <p class="section-lead">CreamTank fulfils professional B2B pallet orders from an <strong>EU warehouse network in France, Germany and Spain</strong>, with additional <strong>UK warehouse</strong> supply for selected SKUs. The ship-from warehouse is chosen by delivery address (nearest first among FR / DE / ES for EU, and UK warehouse for UK destinations); confirmed on inquiry. Details: <a href="/fulfilment.html">EU &amp; UK fulfilment</a>.</p>
+    <section id="serve">
+      <h2>Who we serve</h2>
+      <p class="section-lead">Verified business buyers only. We do not market recreational use. Orders need a clear business purpose and buyer credentials.</p>
       <div class="grid-3">
         <div class="card">
-          <h3>EU network (FR · DE · ES)</h3>
-          <p>Warehouse fulfilment options across France, Germany and Spain for large-format 666g cream charger lines. <strong>EU stock ready — delivery typically within 7 days</strong> for eligible destinations (truck booking 1–3 days; transit typically 4–48h by distance).</p>
+          <h3>Foodservice &amp; bakery</h3>
+          <p>Distributors and wholesale buyers sourcing whipped-cream propellant for professional kitchens.</p>
         </div>
         <div class="card">
-          <h3>UK warehouse</h3>
-          <p>UK warehouse fulfilment for <a href="/products/fastgas-670.html">FastGas ~670g</a> and related B2B quotes. Product availability and DG freight are confirmed per inquiry.</p>
+          <h3>Importers &amp; traders</h3>
+          <p>Registered companies with a stated lawful end use, across EU / UK fulfilment options.</p>
         </div>
         <div class="card">
-          <h3>Dangerous goods shipping</h3>
-          <p>Shipments move as UN 1070 · Class 2.2 / 5.1 with approved DG-capable carriers. Lead times depend on destination and carrier scheduling.</p>
+          <h3>Industrial / technical</h3>
+          <p>B2B buyers who need food-grade N₂O cylinders under wholesale terms.</p>
         </div>
       </div>
     </section>
 
-    <section id="buying">
-      <h2>How buying works</h2>
+    <section id="ordering">
+      <span id="fulfilment"></span>
+      <span id="buying"></span>
+      <h2>Ordering &amp; fulfilment</h2>
+      <p class="section-lead">How a pallet order works, and where it ships from. Full routing notes: <a href="/fulfilment.html">EU &amp; UK fulfilment</a>.</p>
       <div class="steps">
-        <div class="step"><div class="num">1</div><div><strong>MOQ = 1 pallet</strong><br /><span style="color:var(--muted)">We do not fulfil loose retail / small-parcel orders.</span></div></div>
-        <div class="step"><div class="num">2</div><div><strong>Share company details &amp; end use</strong><br /><span style="color:var(--muted)">Company name (optional), country, VAT/registration (optional), food or industrial use, SKU preference, destination. Phone required.</span></div></div>
-        <div class="step"><div class="num">3</div><div><strong>Availability &amp; quote</strong><br /><span style="color:var(--muted)">We confirm EU multi-warehouse (FR / DE / ES) and/or UK stock options and issue a wholesale quote.</span></div></div>
-        <div class="step"><div class="num">4</div><div><strong>Dangerous goods freight</strong><br /><span style="color:var(--muted)">UN 1070 · Class 2.2 with 5.1 — arranged with approved DG carriers. Details on inquiry.</span></div></div>
+        <div class="step"><div class="num">1</div><div><strong>MOQ = 1 pallet</strong><span>No loose retail or small-parcel orders.</span></div></div>
+        <div class="step"><div class="num">2</div><div><strong>Company &amp; end use</strong><span>Credentials and a lawful food or industrial purpose.</span></div></div>
+        <div class="step"><div class="num">3</div><div><strong>Quote on inquiry</strong><span>No public list prices. Stock options confirmed per destination.</span></div></div>
+        <div class="step"><div class="num">4</div><div><strong>DG freight UN1070</strong><span>Class 2.2 / 5.1 with approved DG-capable carriers.</span></div></div>
       </div>
+      <p class="fulfil-note">
+        <strong>Warehouses:</strong> EU network in <strong>France, Germany and Spain</strong>, plus <strong>UK warehouse</strong> fulfilment for selected SKUs such as <a href="/products/fastgas-670.html">FastGas ~670g</a>. Dispatch uses the nearest stocked warehouse; routing is confirmed on inquiry.
+        Destinations such as <strong>Italy, the Netherlands, Belgium and Poland</strong> are delivery addresses, not warehouse nodes.
+        <strong>Delivery typically within 7 days after payment</strong> (truck booking 1–3 days; transit typically 4–48 hours).
+        <a href="/answers/lead-time.html">Lead time</a> · <a href="/answers/un1070-dangerous-goods.html">UN1070 shipping</a>
+      </p>
     </section>
 
-    <section id="docs">
-      <h2>Quality &amp; documents</h2>
-      <div class="grid-3">
+    <section id="quality">
+      <span id="docs"></span>
+      <span id="compliance"></span>
+      <h2>Quality &amp; compliance</h2>
+      <p class="section-lead">Document and buyer-use notes in brief. Full list: <a href="/documents.html">documents hub</a>.</p>
+      <div class="quality">
         <div class="card">
           <h3>Food-grade positioning</h3>
           <p>Offered as food-grade nitrous oxide (E942) cream chargers for whipped-cream / food-propellant use in professional channels.</p>
         </div>
         <div class="card">
-          <h3>SKU-matched files</h3>
-          <p><strong>Cylinder conformity (TPED — notified body 0036 / EN ISO 11118)</strong> is available on request for qualified B2B buyers. We position products as food-grade wholesale cream chargers and <strong>do not claim an E942 COA</strong> in the standard public pack — ask for the current document list with your inquiry.</p>
+          <h3>TPED 0036 on request</h3>
+          <p><strong>Cylinder conformity (TPED — notified body 0036 / EN ISO 11118)</strong> is available on request for qualified B2B buyers. An <strong>E942 COA is not claimed</strong> as part of the standard public pack. <a href="/answers/tped-0036.html">TPED 0036</a></p>
         </div>
         <div class="card">
-          <h3>Large-format B2B</h3>
-          <p>These are large-format wholesale SKUs, not the small cartridge consumer retail path used in some markets.</p>
+          <h3>B2B use only</h3>
+          <p>We sell to business customers for lawful food and industrial uses only. We do not promote inhalation or recreational use, and we do not sell accessories such as balloons or crackers. This is commercial information, not legal advice.</p>
         </div>
-      </div>
-    </section>
-
-    <section id="compliance">
-      <h2>Compliance posture</h2>
-      <p class="section-lead">CreamTank sells to <strong>business customers</strong> for <strong>lawful food and industrial uses</strong> only. We do not promote inhalation or recreational use, and we do not sell accessories such as balloons or crackers. Buyer due diligence is part of every wholesale conversation.</p>
-      <p class="micro">This website copy is commercial information, not legal advice.</p>
-    </section>
-
-    <section id="faq">
-      <h2>FAQ — food-grade N₂O cream chargers (B2B)</h2>
-      <p class="section-lead">Buyer-phrased answers for wholesale E942 cream chargers: MOQ, samples, food-grade use, EU / UK fulfilment, lead times, documents, and how to inquire. See the <a href="/answers.html">full answers index</a>.</p>
-      <div class="answers-hub">
-        <div class="card"><h3><a href="/answers/pallet-quantity.html">Pallet quantity</a></h3><p>Default 504 · MOQ 1 pallet.</p></div>
-        <div class="card"><h3><a href="/answers/no-samples.html">No samples</a></h3><p>UN1070 DG · pallet only.</p></div>
-        <div class="card"><h3><a href="/answers/german-delivery.html">German delivery</a></h3><p>Ship from other EU warehouses.</p></div>
-        <div class="card"><h3><a href="/answers/ddp-door-to-door.html">DDP / door-to-door</a></h3><p>Delivered quotes on inquiry.</p></div>
-        <div class="card"><h3><a href="/answers/lead-time.html">Delivery lead time</a></h3><p>Typically within 7 days after payment.</p></div>
-        <div class="card"><h3><a href="/answers/who-can-buy.html">Who can buy</a></h3><p>Verified B2B only.</p></div>
-        <div class="card"><h3><a href="/answers/eu-b2b-buying.html">EU B2B buying</a></h3><p>Foodservice vs consumer use — B2B only, not legal advice.</p></div>
-        <div class="card"><h3><a href="/answers/tped-0036.html">TPED 0036</a></h3><p>Conformity on request.</p></div>
-        <div class="card"><h3><a href="/answers/food-grade-e942.html">Food-grade E942</a></h3><p>What E942 cream chargers are for.</p></div>
-        <div class="card"><h3><a href="/answers/how-to-inquire.html">How to inquire</a></h3><p>What to include for a quote.</p></div>
-        <div class="card"><h3><a href="/answers/uk-delivery.html">UK delivery</a></h3><p>UK warehouse option for selected SKUs.</p></div>
-        <div class="card"><h3><a href="/answers/un1070-dangerous-goods.html">UN1070 DG shipping</a></h3><p>Class 2.2 / 5.1 with approved DG carriers.</p></div>
-        <div class="card"><h3><a href="/answers/france-delivery.html">France delivery</a></h3><p>Main EU warehouse for 666g lines.</p></div>
-        <div class="card"><h3><a href="/answers/spain-delivery.html">Spain delivery</a></h3><p>EU warehouse network node.</p></div>
-        <div class="card"><h3><a href="/answers/italy-delivery.html">Italy delivery</a></h3><p>IT addresses ship from the EU warehouse network (FR/DE/ES).</p></div>
-        <div class="card"><h3><a href="/answers/netherlands-delivery.html">Netherlands delivery</a></h3><p>NL addresses ship from the EU warehouse network (FR/DE/ES).</p></div>
-        <div class="card"><h3><a href="/answers/belgium-delivery.html">Belgium delivery</a></h3><p>BE addresses ship from the EU warehouse network (FR/DE/ES).</p></div>
-        <div class="card"><h3><a href="/answers/poland-delivery.html">Poland delivery</a></h3><p>PL addresses ship from the EU warehouse network (FR/DE/ES).</p></div>
-        <div class="card"><h3><a href="/answers/receiving-un1070-pallet.html">Receiving a UN1070 pallet</a></h3><p>Goods-in notes for a pallet from a DG carrier.</p></div>
-        <div class="card"><h3><a href="/documents.html">Documents</a></h3><p>TPED0036 hub · inquire.</p></div>
-      </div>
-      <div class="faq-list">
-        <details class="faq" open>
-          <summary>What are food-grade N₂O cream chargers (E942) used for?</summary>
-          <p>Food-grade N₂O cream chargers are large-format cylinders of nitrous oxide authorised as food additive <strong>E942</strong>, used as a whipped-cream / food propellant in professional foodservice, bakery and food-processing channels. CreamTank supplies them for verified <strong>B2B</strong> buyers only — not for recreational use. <a href="/answers/food-grade-e942.html">Learn more — food-grade E942</a>.</p>
-        </details>
-        <details class="faq">
-          <summary>What is the minimum order quantity (MOQ) for wholesale?</summary>
-          <p>Minimum order is <strong>1 pallet</strong>. We do not fulfil loose retail or small-parcel orders. Default EU pallet load is <strong>504 pcs</strong> (see <a href="/answers/pallet-quantity.html">pallet quantity</a>). Quotes cover product plus dangerous-goods freight priced to your destination.</p>
-        </details>
-        <details class="faq">
-          <summary>Which EU and UK countries can you fulfil from?</summary>
-          <p>We offer <strong>EU warehouse fulfilment</strong> through a network in <strong>France, Germany and Spain</strong>, plus <strong>UK warehouse</strong> fulfilment for selected SKUs such as <a href="/products/fastgas-670.html">FastGas ~670g</a>. Dispatch prioritizes the <strong>nearest warehouse</strong> to your delivery address; German addresses can ship from other EU warehouses when needed. <strong>Italian</strong>, <strong>Netherlands</strong>, <strong>Belgian</strong> and <strong>Polish</strong> addresses ship from that EU network — Italy, the Netherlands, Belgium and Poland are delivery destinations, not warehouse nodes. Exact routing and stock are confirmed on inquiry. See the <a href="/fulfilment.html">fulfilment page</a>, <a href="/answers/italy-delivery.html">Italy delivery</a>, <a href="/answers/netherlands-delivery.html">Netherlands delivery</a>, <a href="/answers/belgium-delivery.html">Belgium delivery</a> and <a href="/answers/poland-delivery.html">Poland delivery</a>.</p>
-        </details>
-        <details class="faq">
-          <summary>Can you deliver cream charger pallets to Italy?</summary>
-          <p><strong>Yes</strong>, to verified Italian B2B addresses. Italy is a <strong>delivery destination</strong>, not a CreamTank warehouse node. Orders ship from the EU network in France (main), Germany and Spain — nearest stocked warehouse first. MOQ 1 pallet; no samples; freight quoted by address. <a href="/answers/italy-delivery.html">Learn more — Italy delivery</a>.</p>
-        </details>
-        <details class="faq">
-          <summary>Can you deliver cream charger pallets to the Netherlands?</summary>
-          <p><strong>Yes</strong>, to verified Netherlands B2B addresses. The Netherlands is a <strong>delivery destination</strong>, not a CreamTank warehouse node. Orders ship from the EU network in France (main), Germany and Spain — nearest stocked warehouse first. MOQ 1 pallet; no samples; freight quoted by address. <a href="/answers/netherlands-delivery.html">Learn more — Netherlands delivery</a>.</p>
-        </details>
-        <details class="faq">
-          <summary>Can you deliver cream charger pallets to Belgium?</summary>
-          <p><strong>Yes</strong>, to verified Belgium B2B addresses. Belgium is a <strong>delivery destination</strong>, not a CreamTank warehouse node. Orders ship from the EU network in France (main), Germany and Spain — nearest stocked warehouse first. MOQ 1 pallet; no samples; freight quoted by address. <a href="/answers/belgium-delivery.html">Learn more — Belgium delivery</a>.</p>
-        </details>
-        <details class="faq">
-          <summary>Can you deliver cream charger pallets to Poland?</summary>
-          <p><strong>Yes</strong>, to verified Poland B2B addresses. Poland is a <strong>delivery destination</strong>, not a CreamTank warehouse node. Orders ship from the EU network in France (main), Germany and Spain — nearest stocked warehouse first. MOQ 1 pallet; no samples; freight quoted by address. <a href="/answers/poland-delivery.html">Learn more — Poland delivery</a>.</p>
-        </details>
-        <details class="faq">
-          <summary>What should my site be able to receive for a UN1070 pallet?</summary>
-          <p>Give a <strong>business delivery address</strong> that can accept a pallet from a DG-capable carrier. Note <strong>dock, forklift or tail-lift</strong> needs on inquiry. Pallet orders move with approved DG-capable carriers only — not postal or parcel gas routes. <a href="/answers/receiving-un1070-pallet.html">Learn more — receiving a UN1070 pallet</a>.</p>
-        </details>
-        <details class="faq">
-          <summary>How fast can EU pallet orders be delivered?</summary>
-          <p><strong>EU warehouse stock is ready</strong> for professional B2B pallet orders. Working target for eligible destinations: <strong>delivery typically within 7 days</strong> after payment (truck booking typically <strong>1–3 days</strong>; transit typically <strong>4–48 hours</strong> by distance). Your quote states the expected timing. <a href="/answers/lead-time.html">Learn more — delivery lead time</a>.</p>
-        </details>
-        <details class="faq">
-          <summary>Do you send samples?</summary>
-          <p><strong>No samples.</strong> Wholesale starts at <strong>1 pallet MOQ</strong> only — we do not ship loose retail parcels or sample packs (heavy DG product · UN1070). <a href="/answers/no-samples.html">Learn more — no samples</a> · <a href="/answers/pallet-quantity.html">pallet quantity</a>.</p>
-        </details>
-        <details class="faq">
-          <summary>What happens after payment?</summary>
-          <p>After payment: <strong>truck booking typically 1–3 days</strong>; then <strong>transit typically 4–48 hours</strong> by distance and DG carrier scheduling. Working target for eligible destinations: <strong>delivery typically within 7 days</strong>. Freight is quoted to your delivery address (DDP / door-to-door on inquiry). <a href="/answers/lead-time.html">Learn more — delivery lead time</a> · <a href="/answers/ddp-door-to-door.html">DDP / door-to-door</a>.</p>
-        </details>
-        <details class="faq">
-          <summary>Can German addresses be served from other EU warehouses?</summary>
-          <p><strong>Yes.</strong> German delivery addresses can ship from the <strong>nearest stocked warehouse among France, Germany and Spain</strong>. Routing is confirmed on inquiry. We do <strong>not</strong> separately promise “DE stock ready”. <a href="/answers/german-delivery.html">Learn more — German delivery</a> · <a href="/fulfilment.html">fulfilment</a>.</p>
-        </details>
-        <details class="faq">
-          <summary>Who can buy CreamTank food-grade cream chargers?</summary>
-          <p>Verified business customers with a lawful <strong>foodservice, bakery, food-processing or industrial</strong> end use. Recreational-use requests are declined. Buyer credentials and intended use are part of every wholesale conversation. <a href="/answers/who-can-buy.html">Learn more — who can buy</a>.</p>
-        </details>
-        <details class="faq">
-          <summary>Do you sell cream chargers to consumers or for recreational use in the EU?</summary>
-          <p>No. CreamTank supplies verified <strong>B2B</strong> foodservice, bakery, food-processing or industrial buyers only. The product is food-grade N₂O <strong>E942</strong> for professional whipped-cream / food-propellant use. Recreational and entertainment-use requests are declined. This is commercial buyer guidance, not legal advice — buyers remain responsible for local rules. <a href="/answers/eu-b2b-buying.html">Learn more — EU B2B buying</a>.</p>
-        </details>
-        <details class="faq">
-          <summary>Do you provide certificates, SDS and compliance documents?</summary>
-          <p>For qualified <strong>B2B</strong> buyers, CreamTank can share <strong>cylinder conformity</strong> documents under <strong>TPED (notified body 0036 / EN ISO 11118)</strong> on request against the SKU you inquire. Products are offered as <strong>food-grade</strong> wholesale cream chargers; an <strong>E942 COA is not claimed</strong> as part of the standard public pack. Ask for the current document list with your inquiry. <a href="/documents.html">Documents hub</a> · <a href="/answers/tped-0036.html">TPED 0036</a>.</p>
-        </details>
-        <details class="faq">
-          <summary>How do I inquire for a B2B wholesale quote?</summary>
-          <p>Use the <a href="#inquiry">inquiry form</a>, email <a href="mailto:creamtank@mail.grokbot.com">creamtank@mail.grokbot.com</a>, WhatsApp Jay at <strong>+852 57143665</strong>, or Telegram <a href="https://t.me/Jay_z189" target="_blank" rel="noopener">@Jay_z189</a>. Include company, delivery country/address, SKU interest, pallet quantity and lawful food or industrial end use. <a href="/answers/how-to-inquire.html">Learn more — how to inquire</a>.</p>
-        </details>
       </div>
     </section>
 
@@ -912,27 +698,65 @@
           <a class="btn btn-primary" href="https://wa.me/85257143665" target="_blank" rel="noopener">WhatsApp +852 57143665</a>
           <a class="btn btn-secondary" href="https://t.me/Jay_z189" target="_blank" rel="noopener">Telegram @Jay_z189</a>
           <a class="btn btn-secondary" href="mailto:creamtank@mail.grokbot.com">creamtank@mail.grokbot.com</a>
-          <p class="micro">Form destination for go-live: creamtank@mail.grokbot.com (or CRM synced to this inbox).</p>
         </aside>
       </div>
     </section>
 
-    <footer class="site">
-      <div class="grid">
-        <div>
-          <strong>CreamTank</strong><br />
-          Wholesale food-grade N₂O cream chargers · EU warehouses (France, Germany, Spain) &amp; UK fulfilment
-        </div>
-        <div>
-          <strong>WhatsApp</strong><br />
-          <a href="https://wa.me/85257143665">+852 57143665</a>
-        </div>
-        <div>
-          <strong>Email</strong><br />
-          <a href="mailto:creamtank@mail.grokbot.com">creamtank@mail.grokbot.com</a>
+    <section id="faq">
+      <h2>FAQ</h2>
+      <p class="section-lead">Short answers to the questions buyers ask first. Country routing and longer explanations live on the <a href="/answers.html">answers index</a>.</p>
+      <div class="dest-index">
+        <strong>Delivery destinations</strong> — warehouse nodes are France, Germany and Spain (plus UK warehouse for selected SKUs). Italy, the Netherlands, Belgium and Poland are delivery addresses, not warehouses.
+        <div class="dest-links">
+          <a href="/answers/france-delivery.html">France</a>
+          <a href="/answers/german-delivery.html">Germany</a>
+          <a href="/answers/spain-delivery.html">Spain</a>
+          <a href="/answers/uk-delivery.html">United Kingdom</a>
+          <a href="/answers/italy-delivery.html">Italy</a>
+          <a href="/answers/netherlands-delivery.html">Netherlands</a>
+          <a href="/answers/belgium-delivery.html">Belgium</a>
+          <a href="/answers/poland-delivery.html">Poland</a>
         </div>
       </div>
-      <p class="fine">© CreamTank. All rights reserved. · <a href="/products.html">Products</a> · <a href="/fulfilment.html">Fulfilment</a> · <a href="/documents.html">Documents</a> · <a href="/answers.html">Answers</a> · <a href="#faq">FAQ</a> · <a href="#inquiry">Contact</a></p>
+      <div class="faq-list">
+        <details class="faq">
+          <summary>What is the minimum order quantity (MOQ)?</summary>
+          <p>Minimum order is <strong>1 pallet</strong>. We do not fulfil loose retail or small-parcel orders. Default EU pallet load is <strong>504 pcs</strong> (see <a href="/answers/pallet-quantity.html">pallet quantity</a>). Quotes cover product plus dangerous-goods freight priced to your destination.</p>
+        </details>
+        <details class="faq">
+          <summary>Do you send samples?</summary>
+          <p><strong>No samples.</strong> Wholesale starts at <strong>1 pallet MOQ</strong> only — we do not ship loose retail parcels or sample packs (heavy DG product · UN1070). <a href="/answers/no-samples.html">Learn more — no samples</a>.</p>
+        </details>
+        <details class="faq">
+          <summary>How fast can EU pallet orders be delivered?</summary>
+          <p><strong>EU warehouse stock is ready</strong> for professional B2B pallet orders. Working target for eligible destinations: <strong>delivery typically within 7 days</strong> after payment (truck booking typically <strong>1–3 days</strong>; transit typically <strong>4–48 hours</strong> by distance). Your quote states the expected timing. <a href="/answers/lead-time.html">Learn more — delivery lead time</a>.</p>
+        </details>
+        <details class="faq">
+          <summary>Who can buy CreamTank food-grade cream chargers?</summary>
+          <p>Verified business customers with a lawful <strong>foodservice, bakery, food-processing or industrial</strong> end use. Recreational-use requests are declined. Buyer credentials and intended use are part of every wholesale conversation. <a href="/answers/who-can-buy.html">Learn more — who can buy</a> · <a href="/answers/eu-b2b-buying.html">EU B2B buying</a>.</p>
+        </details>
+        <details class="faq">
+          <summary>Do you provide TPED 0036 and other documents?</summary>
+          <p>For qualified <strong>B2B</strong> buyers, CreamTank can share <strong>cylinder conformity</strong> documents under <strong>TPED (notified body 0036 / EN ISO 11118)</strong> on request against the SKU you inquire. Products are offered as <strong>food-grade</strong> wholesale cream chargers; an <strong>E942 COA is not claimed</strong> as part of the standard public pack. Ask for the current document list with your inquiry. <a href="/documents.html">Documents hub</a> · <a href="/answers/tped-0036.html">TPED 0036</a>.</p>
+        </details>
+        <details class="faq">
+          <summary>Can German addresses be served from other EU warehouses?</summary>
+          <p><strong>Yes.</strong> German delivery addresses can ship from the <strong>nearest stocked warehouse among France, Germany and Spain</strong>. Routing is confirmed on inquiry. We do <strong>not</strong> separately promise Germany warehouse stock ready. <a href="/answers/german-delivery.html">Learn more — German delivery</a> · <a href="/fulfilment.html">fulfilment</a>.</p>
+        </details>
+      </div>
+    </section>
+
+    <footer class="site">
+      <strong style="color:var(--text)">CreamTank</strong> — wholesale food-grade N₂O cream chargers
+      <nav aria-label="Footer">
+        <a href="/products.html">Products</a>
+        <a href="/fulfilment.html">Fulfilment</a>
+        <a href="/documents.html">Documents</a>
+        <a href="/answers.html">Answers</a>
+        <a href="#faq">FAQ</a>
+        <a href="#inquiry">Contact</a>
+      </nav>
+      <p class="fine">© CreamTank. All rights reserved. This website copy is commercial information, not legal advice.</p>
     </footer>
   </div>
 
