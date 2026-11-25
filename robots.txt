@@ -4,6 +4,7 @@
 
 User-agent: *
 Allow: /
+Disallow: /wrangler.jsonc
 
 # Common AI crawlers (explicit allow; site is public B2B marketing)
 User-agent: GPTBot

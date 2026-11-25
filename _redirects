@@ -1,0 +1,3 @@
+# CreamTank canonical host is the apex. www should not stay as a 200 duplicate.
+https://www.creamtank.com/* https://creamtank.com/:splat 301
+https://www.creamtank.com/ https://creamtank.com/ 301
