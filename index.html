@@ -147,6 +147,19 @@
     .products {
       display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.9rem;
     }
+    .uk-note {
+      margin: 0.85rem 0 0.6rem;
+      padding: 0.85rem 1rem;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--accent2);
+      border-radius: 8px;
+      max-width: 52rem;
+    }
+    .uk-note p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+    .uk-note strong { color: var(--text); font-weight: 650; }
+    .uk-note a { color: var(--accent); }
+    .serve-also { color: var(--muted); margin: 0; max-width: 46rem; font-size: 0.98rem; }
     .product {
       background: var(--surface); border: 1px solid var(--line);
       border-radius: var(--radius); overflow: hidden; display: grid;
@@ -326,7 +339,7 @@
             "name": "What is the minimum order quantity (MOQ) for CreamTank wholesale?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The minimum order quantity is 1 pallet. CreamTank does not fulfil loose retail or small-parcel orders. Default EU pallet load is 504 pcs. Quotes cover product plus dangerous-goods freight by destination. See https://creamtank.com/answers/pallet-quantity.html."
+              "text": "The minimum order quantity is 1 pallet. CreamTank does not fulfil loose retail or small-parcel orders. Pallet quantity is confirmed on inquiry. Quotes cover product plus dangerous-goods freight by destination. See https://creamtank.com/answers/pallet-quantity.html."
             }
           },
           {
@@ -461,36 +474,20 @@
             <p class="product-links"><a href="/products/black-cobra-666.html">Specs →</a> · <a href="#inquiry">Inquire →</a></p>
           </div>
         </article>
-        <article class="product" id="product-fastgas">
-          <img src="assets/fastgas.png" alt="FastGas approximately 670g cream charger UK warehouse fulfilment" />
-          <div class="body">
-            <span class="tag">UK warehouse · ~670g</span>
-            <h3>FastGas ~670g</h3>
-            <p>Large-format · 6 / carton · <strong>504 pcs / pallet</strong> · food-grade positioning · quote includes separate freight by destination.</p>
-            <p class="product-links"><a href="/products/fastgas-670.html">Specs →</a> · <a href="#inquiry">Inquire →</a></p>
-          </div>
-        </article>
       </div>
+      <aside class="uk-note" aria-label="UK warehouse SKU">
+        <p><strong>UK warehouse only — FastGas ~670g.</strong>
+        Selected SKU from the UK warehouse, not a generic EU fulfilment item.
+        <a href="/products/fastgas-670.html">Specs →</a>
+        Pallet quantity is confirmed on inquiry, not listed as a counted figure here.</p>
+      </aside>
       <p class="note">EU shipping tiers on inquiry: pallet freight to your address, or full truck (24 pallets) / full container (26 pallets) delivered pricing. No public list prices on this page.</p>
     </section>
 
     <section id="serve">
       <h2>Who we serve</h2>
-      <p class="section-lead">Verified business buyers only. We do not market recreational use. Orders need a clear business purpose and buyer credentials.</p>
-      <div class="grid-3">
-        <div class="card">
-          <h3>Foodservice &amp; bakery</h3>
-          <p>Distributors and wholesale buyers sourcing whipped-cream propellant for professional kitchens.</p>
-        </div>
-        <div class="card">
-          <h3>Importers &amp; traders</h3>
-          <p>Registered companies with a stated lawful end use, across EU / UK fulfilment options.</p>
-        </div>
-        <div class="card">
-          <h3>Industrial / technical</h3>
-          <p>B2B buyers who need food-grade N₂O cylinders under wholesale terms.</p>
-        </div>
-      </div>
+      <p class="section-lead"><strong>Foodservice and bakery buyers first</strong> — distributors and wholesale purchasers sourcing whipped-cream propellant for professional kitchens.</p>
+      <p class="serve-also">Also: registered importers and traders with a stated lawful end use; industrial or technical buyers who need food-grade N₂O under wholesale terms. Verified business buyers only. We do not market recreational use.</p>
     </section>
 
     <section id="ordering">
@@ -640,7 +637,7 @@
       <div class="faq-list">
         <details class="faq">
           <summary>What is the minimum order quantity (MOQ)?</summary>
-          <p>Minimum order is <strong>1 pallet</strong>. We do not fulfil loose retail or small-parcel orders. Default EU pallet load is <strong>504 pcs</strong> (see <a href="/answers/pallet-quantity.html">pallet quantity</a>). Quotes cover product plus dangerous-goods freight priced to your destination.</p>
+          <p>Minimum order is <strong>1 pallet</strong>. We do not fulfil loose retail or small-parcel orders. Pallet quantity is confirmed on inquiry (see <a href="/answers/pallet-quantity.html">pallet quantity</a>). Quotes cover product plus dangerous-goods freight priced to your destination.</p>
         </details>
         <details class="faq">
           <summary>Do you send samples?</summary>
